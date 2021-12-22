@@ -1,0 +1,416 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: sans-serif;
+  position: relative;
+  background-image: -webkit-gradient(linear, left top, right top, from(#5623a6), color-stop(75.56%, #c76735));
+  background-image: linear-gradient(to right, #5623a6 0%, #c76735 75.56%);
+}
+
+main {
+  padding-top: 60px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: transparent;
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  z-index: 20;
+}
+
+header .brand {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 20px;
+  position: relative;
+  z-index: 21;
+}
+
+header .menu {
+  height: 100%;
+  width: 50%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 10;
+}
+
+header .menu label {
+  padding: 0 30px;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  header .menu label {
+    display: none;
+  }
+}
+
+header .menu .menuBotton {
+  display: none;
+}
+
+header .menu .menuBotton:checked ~ .navContainer {
+  right: 0;
+}
+
+header .menu .navContainer {
+  position: absolute;
+  top: 60px;
+  right: -600px;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+header .menu .navContainer .menuContainer {
+  height: 100vh;
+  width: 50vw;
+  background-color: red;
+}
+
+header .menu .navContainer .menuContainer .menuDropdown {
+  height: 100vh;
+  color: #ffffff;
+}
+
+header .menu .navContainer .menuContainer .menuDropdown .menuItem {
+  font-size: 1.7rem;
+  line-height: 7rem;
+  padding: 0 0 0 30px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+header .menu .navContainer .menuContainer .menuDropdown .menuItem:hover {
+  -webkit-box-shadow: 768px 0 8px #ffffff inset;
+          box-shadow: 768px 0 8px #ffffff inset;
+}
+
+header .menu .navContainer .menuContainer .menuDropdown .menuItem:hover > .menuLink {
+  color: blue;
+}
+
+header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
+  color: #000000;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  header .menu .navContainer .menuContainer .menuDropdown .menuItem {
+    padding: 0 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  header .menu .navContainer .menuContainer .menuDropdown {
+    padding-right: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    height: 60px;
+  }
+}
+
+@media (min-width: 768px) {
+  header .menu .navContainer .menuContainer {
+    height: 60px;
+    width: 100vw;
+    top: 0;
+    background: transparent;
+  }
+}
+
+@media (min-width: 768px) {
+  header .menu .navContainer {
+    position: static;
+    top: 0;
+  }
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*about*/
+.about {
+  margin-top: -50px;
+  position: relative;
+  z-index: 10;
+  -webkit-clip-path: polygon(50% 0, 100% 12%, 100% 90%, 50% 100%, 0 90%, 0 50%, 0 10%);
+          clip-path: polygon(50% 0, 100% 12%, 100% 90%, 50% 100%, 0 90%, 0 50%, 0 10%);
+  padding: 60px 40px;
+  color: #ffffff;
+  background-image: radial-gradient(50% 50% at 50% 50%, #3b196d 0%, #1b0d27 100%);
+}
+
+.about p {
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  line-height: 1.56rem;
+}
+
+.news {
+  padding: 40px 20px;
+}
+
+.news h2 {
+  color: #ffffff;
+}
+
+.news .newsContainer {
+  padding: 5px;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.news .newsContainer .new {
+  width: 130px;
+}
+
+.news .newsContainer .new img {
+  margin-bottom: -3px;
+  width: 100%;
+  height: auto;
+}
+
+.news .newsContainer .new .titleNewsContainer {
+  background: #ffffff85;
+  padding: 15px 10px;
+  height: 105px;
+}
+
+.news .newsContainer .new .titleNewsContainer p {
+  font-size: 1.2rem;
+  line-height: 1.44rem;
+  color: #ffffff;
+}
+
+.news .newsContainer .new .titleNewsContainer .btnContainer {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.news .newsContainer .new .titleNewsContainer .btnContainer button {
+  background: transparent;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .news .newsContainer .new {
+    width: 230px;
+  }
+}
+
+/*about2*/
+.about2 {
+  position: relative;
+  z-index: 10;
+  -webkit-clip-path: polygon(50% 0, 100% 12%, 100% 90%, 50% 100%, 0 90%, 0 50%, 0 10%);
+          clip-path: polygon(50% 0, 100% 12%, 100% 90%, 50% 100%, 0 90%, 0 50%, 0 10%);
+  padding: 60px 40px;
+  color: #ffffff;
+  background-image: radial-gradient(50% 50% at 50% 50%, #3b196d 0%, #1b0d27 100%);
+}
+
+.about2 p {
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  line-height: 1.56rem;
+}
+
+.professionals {
+  padding: 40px 20px;
+}
+
+.professionals h2 {
+  color: #ffffff;
+}
+
+.professionals .professionalsContainer {
+  padding: 5px;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.professionals .professionalsContainer .professional {
+  width: 130px;
+}
+
+.professionals .professionalsContainer .professional img {
+  margin-bottom: -3px;
+  width: 100%;
+  height: auto;
+}
+
+.professionals .professionalsContainer .professional .titleProfessionalContainer {
+  text-align: center;
+  padding: 15px 10px;
+  height: 105px;
+}
+
+.professionals .professionalsContainer .professional .titleProfessionalContainer p {
+  font-size: 1.2rem;
+  line-height: 1.44rem;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .professionals .professionalsContainer .professional {
+    width: 230px;
+  }
+}
+
+.professionals .btnContainerProfessionals {
+  text-align: center;
+}
+
+.professionals .btnContainerProfessionals button {
+  padding: 10px 20px;
+  color: #ffffff;
+  background: #ffffff85;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+}
+
+.youths {
+  padding: 40px 20px;
+}
+
+.youths h2 {
+  color: #ffffff;
+}
+
+.youths .youthContainer {
+  padding: 5px;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.youths .youthContainer .youth {
+  width: 130px;
+}
+
+.youths .youthContainer .youth img {
+  margin-bottom: -3px;
+  width: 100%;
+  height: auto;
+}
+
+.youths .youthContainer .youth .titleYouthContainer {
+  text-align: center;
+  padding: 15px 10px;
+  height: 105px;
+}
+
+.youths .youthContainer .youth .titleYouthContainer p {
+  font-size: 1.2rem;
+  line-height: 1.44rem;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .youths .youthContainer .youth {
+    width: 230px;
+  }
+}
+
+.youths .btnContainerYouths {
+  text-align: center;
+}
+
+.youths .btnContainerYouths button {
+  padding: 10px 20px;
+  color: #ffffff;
+  background: #ffffff85;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+}
+/*# sourceMappingURL=style.css.map */

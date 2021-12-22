@@ -1,0 +1,45 @@
+.news {
+  padding: 40px 20px;
+  h2 {
+    color: $white;
+  }
+  .newsContainer {
+    padding: 5px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    .new {
+      width: 130px;
+      img {
+        margin-bottom: -3px;
+        width: 100%;
+        height: auto;
+      }
+      .titleNewsContainer {
+        background: $blur;
+        padding: 15px 10px;
+        height: 105px;
+        p {
+          font-size: 1.2rem;
+          line-height: 1.44rem;
+          color: $white;
+        }
+        .btnContainer {
+          margin-top: 10px;
+          text-align: center;
+          button {
+            background: transparent;
+            cursor: pointer;
+            border: 0;
+            outline: none;
+          }
+        }
+      }
+      @include tablet {
+        width: 230px;
+      }
+    }
+  }
+}
