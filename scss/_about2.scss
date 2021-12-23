@@ -1,18 +1,41 @@
 /*about2*/
-.about2 {
+.services {
+  padding: 60px 40px;
+  h2 {
+    color: $white;
+    font-family: $font1;
+    font-size: 1.904rem;
+    line-height: 1.822rem;
+    display: none;
+    @include tablet {
+      display: block;
+    }
+  }
+
   position: relative;
   z-index: 10;
   clip-path: polygon(50% 0, 100% 12%, 100% 90%, 50% 100%, 0 90%, 0 50%, 0 10%);
-  padding: 60px 40px;
   color: $white;
   background-image: radial-gradient(
     50% 50% at 50% 50%,
     $color3 0%,
     $color4 100%
   );
-  p {
-    margin-bottom: 20px;
-    font-size: 1.3rem;
-    line-height: 1.56rem;
+  .servicesContainer {
+    @include tablet {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+    article {
+      p {
+        margin-bottom: 20px;
+        font-size: 1.3rem;
+        line-height: 1.56rem;
+        font-family: $font1;
+        font-weight: normal;
+      }
+    }
   }
 }

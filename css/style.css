@@ -1,3 +1,35 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("./../fonts/Gilroy-Bold.woff2") format("woff2"), url("./../fonts/Gilroy-Bold.woff") format("woff"), url("./../fonts/Gilroy-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("./../fonts/Gotham-Bold.woff2") format("woff2"), url("./../fonts/Gotham-Bold.woff") format("woff"), url("./../fonts/Gotham-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("./../fonts/Gilroy-Regular.woff2") format("woff2"), url("./../fonts/Gilroy-Regular.woff") format("woff"), url("./../fonts/Gilroy-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Circular ProTT";
+  src: url("./../fonts/CircularProTT-Bold.woff2") format("woff2"), url("./../fonts/CircularProTT-Bold.woff") format("woff"), url("./../fonts/CircularProTT-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -193,7 +225,7 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
 
 /*about*/
 .about {
-  margin-top: -50px;
+  margin-top: -60px;
   position: relative;
   z-index: 10;
   -webkit-clip-path: polygon(50% 0, 100% 12%, 100% 90%, 50% 100%, 0 90%, 0 50%, 0 10%);
@@ -207,6 +239,21 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
   margin-bottom: 20px;
   font-size: 1.3rem;
   line-height: 1.56rem;
+  font-family: "Gilroy";
+  font-weight: bold;
+  max-width: 797px;
+}
+
+.about .btnContainer {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.about .btnContainer button {
+  background: transparent;
+  cursor: pointer;
+  border: 0;
+  outline: none;
 }
 
 .news {
@@ -215,6 +262,9 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
 
 .news h2 {
   color: #ffffff;
+  font-family: "Gilroy";
+  font-size: 1.904rem;
+  line-height: 1.822rem;
 }
 
 .news .newsContainer {
@@ -249,6 +299,8 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
 
 .news .newsContainer .new .titleNewsContainer p {
   font-size: 1.2rem;
+  font-family: "Gilroy";
+  font-weight: normal;
   line-height: 1.44rem;
   color: #ffffff;
 }
@@ -272,20 +324,49 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
 }
 
 /*about2*/
-.about2 {
+.services {
+  padding: 60px 40px;
   position: relative;
   z-index: 10;
   -webkit-clip-path: polygon(50% 0, 100% 12%, 100% 90%, 50% 100%, 0 90%, 0 50%, 0 10%);
           clip-path: polygon(50% 0, 100% 12%, 100% 90%, 50% 100%, 0 90%, 0 50%, 0 10%);
-  padding: 60px 40px;
   color: #ffffff;
   background-image: radial-gradient(50% 50% at 50% 50%, #3b196d 0%, #1b0d27 100%);
 }
 
-.about2 p {
+.services h2 {
+  color: #ffffff;
+  font-family: "Gilroy";
+  font-size: 1.904rem;
+  line-height: 1.822rem;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .services h2 {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .services .servicesContainer {
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 10px;
+  }
+}
+
+.services .servicesContainer article p {
   margin-bottom: 20px;
   font-size: 1.3rem;
   line-height: 1.56rem;
+  font-family: "Gilroy";
+  font-weight: normal;
 }
 
 .professionals {
@@ -294,6 +375,9 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
 
 .professionals h2 {
   color: #ffffff;
+  font-family: "Gilroy";
+  font-size: 1.904rem;
+  line-height: 1.822rem;
 }
 
 .professionals .professionalsContainer {
@@ -330,6 +414,8 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
   font-size: 1.2rem;
   line-height: 1.44rem;
   color: #ffffff;
+  font-family: "Gilroy";
+  font-weight: normal;
 }
 
 @media (min-width: 768px) {
@@ -343,6 +429,9 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
 }
 
 .professionals .btnContainerProfessionals button {
+  font-family: "Gilroy";
+  font-size: 1.222rem;
+  line-height: 1.536rem;
   padding: 10px 20px;
   color: #ffffff;
   background: #ffffff85;
@@ -357,6 +446,9 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
 
 .youths h2 {
   color: #ffffff;
+  font-family: "Gilroy";
+  font-size: 1.904rem;
+  line-height: 1.822rem;
 }
 
 .youths .youthContainer {
@@ -392,6 +484,8 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
 .youths .youthContainer .youth .titleYouthContainer p {
   font-size: 1.2rem;
   line-height: 1.44rem;
+  font-family: "Gilroy";
+  font-weight: normal;
   color: #ffffff;
 }
 
@@ -406,11 +500,81 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
 }
 
 .youths .btnContainerYouths button {
+  font-family: "Gilroy";
+  font-size: 1.222rem;
+  line-height: 1.536rem;
   padding: 10px 20px;
   color: #ffffff;
   background: #ffffff85;
   cursor: pointer;
   border: 0;
   outline: none;
+}
+
+.contact {
+  background-color: #312682;
+  padding: 40px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.contact a,
+.contact p {
+  color: #ffffff;
+}
+
+.contact .containerLeft,
+.contact .containerRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact .containerLeft {
+  font-family: "Circular ProTT";
+  font-size: 1.236rem;
+  line-height: 2.293rem;
+}
+
+.contact .containerRight {
+  font-family: "Gilroy";
+  font-weight: normal;
+  font-size: 1.071rem;
+  line-height: 1.19rem;
+}
+
+.contact .containerRight .address .addressInfo {
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #1d1d1b;
+  color: #707070;
+  padding: 20px 40px;
+  font-family: "Gotham";
+  font-size: 0.7rem;
+  line-height: 0.84rem;
+}
+
+footer p:first-child {
+  margin-bottom: 10px;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */

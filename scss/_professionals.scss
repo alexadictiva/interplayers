@@ -2,6 +2,9 @@
   padding: 40px 20px;
   h2 {
     color: $white;
+    font-family: $font1;
+    font-size: 1.904rem;
+    line-height: 1.822rem;
   }
   .professionalsContainer {
     padding: 5px;
@@ -25,6 +28,8 @@
           font-size: 1.2rem;
           line-height: 1.44rem;
           color: $white;
+          font-family: $font1;
+          font-weight: normal;
         }
       }
 
@@ -36,6 +41,9 @@
   .btnContainerProfessionals {
     text-align: center;
     button {
+      font-family: $font1;
+      font-size: 1.222rem;
+      line-height: 1.536rem;
       padding: 10px 20px;
       color: $white;
       background: $blur;

@@ -2,6 +2,9 @@
   padding: 40px 20px;
   h2 {
     color: $white;
+    font-family: $font1;
+    font-size: 1.904rem;
+    line-height: 1.822rem;
   }
   .newsContainer {
     padding: 5px;
@@ -23,6 +26,8 @@
         height: 105px;
         p {
           font-size: 1.2rem;
+          font-family: $font1;
+          font-weight: normal;
           line-height: 1.44rem;
           color: $white;
         }

@@ -34,7 +34,21 @@
         <div class="navContainer">
           <nav class="menuContainer">
             <ul class="menuDropdown">
-              <li class="menuItem"><a class="menuLink" href="#">HOME</a></li>
+              <li class="menuItem">
+                <a class="menuLink" href="#about">Nosotros</a>
+              </li>
+              <li class="menuItem">
+                <a class="menuLink" href="#news">Noticias</a>
+              </li>
+              <li class="menuItem">
+                <a class="menuLink" href="#services">Servicios</a>
+              </li>
+              <li class="menuItem">
+                <a class="menuLink" href="#players">Interplayers</a>
+              </li>
+              <li class="menuItem">
+                <a class="menuLink" href="#contact">Contacto</a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -177,7 +191,7 @@
           ></span>
         </div>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <p>
           Founded in 2000, SEG Football has been leaving its mark in the
           industry. With 300+ clients and 2,000+ deals and contract extensions,
@@ -196,8 +210,13 @@
           combining market information from all around the globe. SEG Football’s
           one and only goal: to help our clients maximise their talent.
         </p>
+        <div class="btnContainer">
+          <button class="btn-plus">
+            <img src="./assets/icon/plus.svg" alt="Plus" />
+          </button>
+        </div>
       </section>
-      <section class="news">
+      <section class="news" id="news">
         <h2>Noticias</h2>
         <div class="newsContainer">
           <article class="new">
@@ -246,27 +265,30 @@
           </article>
         </div>
       </section>
-      <section class="about2">
-        <p>
-          Founded in 2000, SEG Football has been leaving its mark in the
-          industry. With 300+ clients and 2,000+ deals and contract extensions,
-          we have built a reputation of reliability and integrity in the
-          football world.
-        </p>
-        <p>
-          SEG Football deals with all the elite clubs in Europe, but is also
-          active on a local level, which is why many talented prospects choose
-          for our services. We make the difference with our unique way of
-          operating, focused on long term career development and maximising
-          talent development.
-        </p>
-        <p>
-          Transparent and skilled, our staff is in 25+ countries, gathering and
-          combining market information from all around the globe. SEG Football’s
-          one and only goal: to help our clients maximise their talent.
-        </p>
+      <section class="services" id="services">
+        <h2>Servicios</h2>
+        <div class="servicesContainer">
+          <article>
+            <p>
+              Protección, organización y cumplimiento de los intereses de los
+              futbolistas asistidos y del Club.
+            </p>
+          </article>
+          <article>
+            <p>
+              Servicios de intermediación para la venta y adquisición de
+              deportistas de las federaciones mundiales.
+            </p>
+          </article>
+          <article>
+            <p>
+              Servicios de consultoría e investigación entre nuevos mercados y
+              campeonatos.
+            </p>
+          </article>
+        </div>
       </section>
-      <section class="professionals">
+      <section class="professionals" id="players">
         <h2>Profesionales</h2>
         <div class="professionalsContainer">
           <article class="professional">
@@ -338,7 +360,52 @@
           <button class="btn-more">Mas Interplayers</button>
         </div>
       </section>
+      <section class="contact" id="contact">
+        <div class="containerLeft">
+          <article class="brand">
+            <img src="./assets/image/logo.svg" alt="Logo" />
+          </article>
+          <article class="rrss">
+            <div class="facebook">
+              <a href="#"> /InterPlayers.pro</a>
+            </div>
+            <div class="instagram">
+              <a href="#"> /interplayers.pro</a>
+            </div>
+          </article>
+        </div>
+        <div class="containerRight">
+          <article class="map">
+            <img src="./assets/image/map.svg" alt="Map" />
+          </article>
+          <article class="address">
+            <div class="contactInfo">
+              <p>
+                <a href="telf: +54911444442020"> +54 9 11 4444 2020</a>
+              </p>
+              <p>
+                <a href="mailto: contact@interplayers.com">
+                  contact@interplayers.com</a
+                >
+              </p>
+            </div>
+            <div class="addressInfo">
+              <p>
+                Lidoro Quinteros 1149, <br />
+                CABA, Argentina
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
     </main>
+    <footer>
+      <p>2021 InterPlayers. Todos los derechos reservados.</p>
+      <ul>
+        <li>Términos de Uso</li>
+        <li>Política de privacidad</li>
+      </ul>
+    </footer>
   </body>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
