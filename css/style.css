@@ -397,13 +397,19 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 10px;
+  gap: 5px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 .professionals .professionalsContainer .professional {
   width: 130px;
+}
+
+@media (min-width: 768px) {
+  .professionals .professionalsContainer .professional {
+    width: 350px;
+  }
 }
 
 .professionals .professionalsContainer .professional img {
