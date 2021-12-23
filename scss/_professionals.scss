@@ -37,6 +37,12 @@
         width: 230px;
       }
     }
+    .professionalHidden {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
   }
   .btnContainerProfessionals {
     text-align: center;
