@@ -1,17 +1,17 @@
 .news {
-  padding: 40px 20px;
+  padding: 15px 20px 20px;
   h2 {
     color: $white;
     font-family: $font1;
-    font-size: 1.904rem;
+    font-size: 1.704rem;
     line-height: 1.822rem;
   }
   .newsContainer {
-    padding: 5px;
+    padding: 5px 0;
     margin-top: 13px;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
     flex-wrap: wrap;
     .new {
       width: 130px;
@@ -22,8 +22,8 @@
       }
       .titleNewsContainer {
         background: $blur;
-        padding: 15px 10px;
-        height: 105px;
+        padding: 10px;
+        height: 90px;
         p {
           font-size: 1.2rem;
           font-family: $font1;
@@ -32,7 +32,7 @@
           color: $white;
         }
         .btnContainer {
-          margin-top: 10px;
+          margin-top: 5px;
           text-align: center;
           button {
             background: transparent;

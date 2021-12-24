@@ -1,8 +1,8 @@
 .contact {
   background-color: $color5;
-  padding: 40px 20px;
+  padding: 15px 20px 20px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   a,
   p {
     color: $white;
@@ -15,7 +15,7 @@
     justify-content: space-between;
   }
   .containerLeft {
-    font-family: $font3;
+    font-family: $font1;
     font-size: 1.236rem;
     line-height: 2.293rem;
   }
@@ -24,8 +24,11 @@
     font-weight: normal;
     font-size: 1.071rem;
     line-height: 1.19rem;
+    align-items: flex-end;
     .address {
+      text-align: end;
       .contactInfo {
+        margin-top: 10px;
       }
       .addressInfo {
         margin-top: 10px;

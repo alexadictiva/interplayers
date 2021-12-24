@@ -1,5 +1,5 @@
 .youths {
-  padding: 40px 10px;
+  padding: 15px 20px 40px;
 
   h2 {
     color: $white;
@@ -8,14 +8,14 @@
     line-height: 1.822rem;
   }
   .youthContainer {
-    padding: 5px;
+    padding: 5px 0;
     margin-top: 10px;
     display: flex;
     justify-content: center;
     gap: 10px;
     flex-wrap: wrap;
     .youth {
-      width: 100px;
+      width: 85px;
       img {
         margin-bottom: -3px;
         width: 100%;
@@ -51,7 +51,8 @@
       font-family: $font1;
       font-size: 1.222rem;
       line-height: 1.536rem;
-      padding: 10px 20px;
+      height: 42.71px;
+      width: 135.59px;
       color: $white;
       background: $blur;
       cursor: pointer;
