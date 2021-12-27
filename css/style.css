@@ -54,6 +54,10 @@ main {
   /* padding-top: 60px; */
 }
 
+.wrapper {
+  background-image: url("./../assets/image/bigBg.png");
+}
+
 ul {
   list-style: none;
 }
@@ -114,7 +118,7 @@ header .menu label {
   padding: 0 30px;
   cursor: pointer;
   position: relative;
-  z-index: 3;
+  z-index: 12;
 }
 
 @media (min-width: 768px) {
@@ -157,15 +161,6 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   cursor: pointer;
-}
-
-header .menu .navContainer .menuContainer .menuDropdown .menuItem:hover {
-  -webkit-box-shadow: 768px 0 8px #ffffff inset;
-          box-shadow: 768px 0 8px #ffffff inset;
-}
-
-header .menu .navContainer .menuContainer .menuDropdown .menuItem:hover > .menuLink {
-  color: blue;
 }
 
 header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
