@@ -1,14 +1,16 @@
 .news {
-  padding: 15px 20px 20px;
+  @include padding;
+  padding-top: 15px;
+  padding-bottom: 20px;
   h2 {
     color: $white;
     font-family: $font1;
-    font-size: 1.704rem;
+    font-size: 1.654rem;
     line-height: 1.822rem;
   }
   .newsContainer {
     padding: 5px 0;
-    margin-top: 13px;
+    margin-top: 7px;
     display: flex;
     justify-content: center;
     gap: 15px;

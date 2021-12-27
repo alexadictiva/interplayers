@@ -15,7 +15,7 @@ header {
   }
 
   .menu {
-    height: 100%;
+    /* height: 100%; */
     width: 50%;
     position: relative;
     display: flex;
@@ -25,32 +25,35 @@ header {
     label {
       padding: 0 30px;
       cursor: pointer;
+      position: relative;
+      z-index: 3;
       @include tablet {
         display: none;
       }
     }
     .menuBotton {
       display: none;
+
       &:checked ~ .navContainer {
-        right: 0;
+        right: 20px;
       }
     }
     .navContainer {
       position: absolute;
-      top: 60px;
+      top: -10px;
       right: -600px;
       -webkit-transition: all 0.5s ease-out;
       transition: all 0.5s ease-out;
       .menuContainer {
-        height: 100vh;
+        /* height: 100vh; */
         width: 50vw;
-        background-color: red;
+        background-color: #431b82;
         .menuDropdown {
-          height: 100vh;
+          /*  height: 100vh; */
           color: $white;
           .menuItem {
             font-size: 1.7rem;
-            line-height: 7rem;
+            line-height: 5rem;
             padding: 0 0 0 30px;
             transition: all 0.5s ease-in-out;
             cursor: pointer;
@@ -61,7 +64,8 @@ header {
               color: blue;
             }
             .menuLink {
-              color: #000000;
+              color: $white;
+              font-family: $font1;
               transition: all 0.5s ease-in-out;
             }
             @include tablet {

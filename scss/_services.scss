@@ -1,6 +1,8 @@
 /*about2*/
 .services {
-  padding: 60px 40px;
+  @include padding;
+  padding-top: 60px;
+  padding-bottom: 60px;
   h2 {
     color: $white;
     font-family: $font1;
@@ -30,7 +32,7 @@
     }
     article {
       p {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         font-size: 1.888rem;
         line-height: 2.203rem;
         font-family: $font1;
