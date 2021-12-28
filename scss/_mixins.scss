@@ -19,6 +19,10 @@
   padding-left: 22px;
   padding-right: 22px;
   @include tablet {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  @include biggest-desktop {
     padding-left: 65px;
     padding-right: 65px;
   }

@@ -1,37 +1,96 @@
 .contact {
   background-color: $color5;
-  padding: 15px 20px 20px;
-  display: flex;
-  justify-content: space-between;
-  a,
-  p {
-    color: $white;
-  }
-  .containerLeft,
-  .containerRight {
+  @include padding;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  .containerContact {
+    margin: auto;
+    max-width: 850px;
     display: flex;
-    flex-direction: column;
-    gap: 20px;
     justify-content: space-between;
-  }
-  .containerLeft {
-    font-family: $font1;
-    font-size: 1.236rem;
-    line-height: 2.293rem;
-  }
-  .containerRight {
-    font-family: $font1;
-    font-weight: normal;
-    font-size: 1.071rem;
-    line-height: 1.19rem;
-    align-items: flex-end;
-    .address {
-      text-align: end;
-      .contactInfo {
-        margin-top: 10px;
+
+    @include biggest-desktop {
+      max-width: calc(100vw - 400px);
+    }
+    .containerLeft,
+    .containerRight {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: space-between;
+      a,
+      p {
+        color: $white;
       }
-      .addressInfo {
-        margin-top: 10px;
+    }
+    .containerLeft {
+      font-family: $font1;
+      font-size: 1.236rem;
+      line-height: 2.293rem;
+      @include desktop {
+        font-size: 2rem;
+        line-height: 3rem;
+        font-weight: bold;
+      }
+      .brand {
+        img {
+          @include desktop {
+            width: 180px;
+          }
+        }
+      }
+      .rrss {
+        .facebook,
+        .instagram {
+          a {
+            img {
+              @include desktop {
+                width: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .containerRight {
+      font-family: $font1;
+      font-weight: normal;
+      font-size: 1.071rem;
+      line-height: 1.19rem;
+      align-items: flex-end;
+      @include desktop {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        font-weight: normal;
+      }
+      .map {
+        @include tablet {
+          margin-top: 20px;
+        }
+        @include desktop {
+          margin-top: 40px;
+        }
+        img {
+          @include tablet {
+            width: 200px;
+          }
+          @include desktop {
+            width: 300px;
+          }
+        }
+      }
+      .address {
+        text-align: end;
+        @include desktop {
+          display: flex;
+          gap: 30px;
+        }
+        .contactInfo {
+          margin-top: 10px;
+        }
+        .addressInfo {
+          margin-top: 10px;
+        }
       }
     }
   }

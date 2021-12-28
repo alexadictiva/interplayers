@@ -1,8 +1,8 @@
 /*about2*/
 .services {
   @include padding;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   h2 {
     color: $white;
     font-family: $font1;
@@ -31,16 +31,23 @@
       display: flex;
       justify-content: center;
       padding: 0 20px;
-      gap: 40px;
+      gap: 30px;
     }
     article {
+      @include tablet {
+        width: calc(75vw / 3);
+      }
       p {
         margin-bottom: 10px;
         font-size: 1.888rem;
         line-height: 2.203rem;
         font-family: $font1;
         font-weight: normal;
-        @include desktop {
+        @include tablet {
+          font-size: 1.97rem;
+          line-height: 2.4rem;
+        }
+        @include biggest-desktop {
           font-size: 2.2rem;
           line-height: 2.6rem;
           padding-left: 5px;

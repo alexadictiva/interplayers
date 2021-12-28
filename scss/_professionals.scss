@@ -1,8 +1,10 @@
 .professionals {
   @include padding;
-  @include tablet {
-    padding: 60px 65px 40px;
+  @include desktop {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
+
   h2 {
     color: $white;
     font-family: $font1;
@@ -16,26 +18,25 @@
     }
   }
   .professionalsContainer {
-    margin-top: 7px;
+    margin: 7px auto;
     display: flex;
     justify-content: center;
     gap: 15px;
     flex-wrap: wrap;
+
     @include desktop {
-      padding: 0 20px;
+      max-width: calc(100vw - 200px);
+      padding: 0;
       gap: 30px;
     }
     .professional {
       width: 130px;
       @include tablet {
-        width: 200px;
-      }
-      @include desktop {
-        width: 280px;
+        width: calc(74vw / 3);
       }
 
       img {
-        margin-bottom: -3px;
+        /* margin-bottom: -3px; */
         width: 100%;
         height: auto;
       }
@@ -43,6 +44,7 @@
         text-align: center;
         padding: 10px;
         height: 60px;
+
         p {
           font-size: 1.2rem;
           line-height: 1.44rem;
@@ -50,7 +52,7 @@
           font-family: $font1;
           font-weight: normal;
           @include tablet {
-            font-size: 1.6rem;
+            font-size: 1.5rem;
             line-height: 2rem;
           }
         }

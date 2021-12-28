@@ -1,10 +1,7 @@
 .youths {
+  @include padding;
   padding-top: 15px;
   padding-bottom: 40px;
-  @include padding;
-  @include tablet {
-    padding: 60px 65px;
-  }
 
   h2 {
     color: $white;
@@ -19,15 +16,25 @@
     }
   }
   .youthContainer {
+    max-width: 1024px;
+    margin: 10px auto;
     padding: 5px 0 0;
-    margin-top: 10px;
-
     display: flex;
     justify-content: center;
     gap: 10px;
     flex-wrap: wrap;
+    text-transform: uppercase;
+    @include desktop {
+      gap: 40px;
+    }
+    @include biggest-desktop {
+      max-width: calc(100vw - 200px);
+    }
     .youth {
       width: 85px;
+      @include tablet {
+        width: calc(70vw / 4);
+      }
       img {
         margin-bottom: -3px;
         width: 100%;
@@ -44,10 +51,6 @@
           font-weight: normal;
           color: $white;
         }
-      }
-
-      @include tablet {
-        width: 230px;
       }
     }
     .hidden {

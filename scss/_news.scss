@@ -31,6 +31,9 @@
       gap: 30px;
       flex-wrap: nowrap;
     }
+    @include biggest-desktop {
+      gap: 40px;
+    }
     .new {
       width: 130px;
       @include tablet {

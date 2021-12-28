@@ -8,6 +8,7 @@ header {
   z-index: 20;
   @include desktop {
     position: absolute;
+    top: 30px;
   }
   .brand {
     width: 50%;
@@ -15,6 +16,16 @@ header {
     padding-left: 20px;
     position: relative;
     z-index: 21;
+    img {
+      @include tablet {
+        width: 30vw;
+
+        margin-left: 30px;
+      }
+      @include desktop {
+        margin-top: 40px;
+      }
+    }
   }
 
   .menu {

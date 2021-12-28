@@ -1,16 +1,38 @@
 footer {
   background-color: $color6;
-  color: $color7;
-  padding: 15px 20px;
-  font-family: $font2;
-  font-size: 0.7rem;
-  line-height: 0.84rem;
-  p {
-    &:first-child {
-      margin-bottom: 2px;
+  .footerContainer {
+    @include padding;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: $color7;
+    font-family: $font2;
+    font-size: 0.7rem;
+    line-height: 0.84rem;
+    @include tablet {
+      padding-top: 25px;
+      padding-bottom: 25px;
+      display: flex;
+      justify-content: space-between;
     }
-  }
-  ul {
-    display: flex;
+    @include desktop {
+      margin: auto;
+      max-width: 950px;
+    }
+    @include biggest-desktop {
+      max-width: calc(100vw - 300px);
+    }
+
+    p {
+      &:first-child {
+        margin-bottom: 2px;
+      }
+    }
+    ul {
+      display: flex;
+      gap: 10px;
+      @include tablet {
+        gap: 30px;
+      }
+    }
   }
 }

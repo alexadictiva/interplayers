@@ -19,7 +19,15 @@
   <body>
     <header>
       <section class="brand">
-        <img src="./assets/image/logo.svg" alt="Logo" />
+        <picture>
+          <source media="(max-width: 900px)" srcset="./assets/image/logo.svg" />
+          <source
+            media="(min-width: 901px)"
+            srcset="./assets/image/logo2.svg"
+          />
+
+          <img src="./assets/image/logo.svg" alt="Logo" />
+        </picture>
       </section>
       <section class="menu">
         <label for="menuBotton">
@@ -227,28 +235,6 @@
           <h2>Noticias</h2>
           <div class="newsContainer">
             <article class="new">
-              <img src="./assets/image/new1.jpg" alt="Player" />
-              <div class="titleNewsContainer">
-                <p>Argentina campeón de la Copa América 2021</p>
-                <div class="btnContainer">
-                  <button class="btn-plus">
-                    <img src="./assets/icon/plus.svg" alt="Plus" />
-                  </button>
-                </div>
-              </div>
-            </article>
-            <article class="new">
-              <img src="./assets/image/new2.jpg" alt="Player" />
-              <div class="titleNewsContainer">
-                <p>Erik Lamela firma con el Sevilla FC hasta 2024</p>
-                <div class="btnContainer">
-                  <button class="btn-plus">
-                    <img src="./assets/icon/plus.svg" alt="Plus" />
-                  </button>
-                </div>
-              </div>
-            </article>
-            <article class="new">
               <img src="./assets/image/new3.jpg" alt="Player" />
               <div class="titleNewsContainer">
                 <p>Paredes le da la bienvenida a Messi en el PSG</p>
@@ -263,6 +249,30 @@
               <img src="./assets/image/new4.jpg" alt="Player" />
               <div class="titleNewsContainer">
                 <p>Gonzalo Montiel firma por 5 años con el Sevilla FC</p>
+                <div class="btnContainer">
+                  <button class="btn-plus">
+                    <img src="./assets/icon/plus.svg" alt="Plus" />
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="new">
+              <img src="./assets/image/new1.jpg" alt="Player" />
+              <div class="titleNewsContainer">
+                <p>Argentina campeón de la Copa América 2021</p>
+                <div class="btnContainer">
+                  <button class="btn-plus">
+                    <img src="./assets/icon/plus.svg" alt="Plus" />
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="new">
+              <img src="./assets/image/new2.jpg" alt="Player" />
+              <div class="titleNewsContainer">
+                <p>Erik Lamela firma con el Sevilla FC hasta 2024</p>
                 <div class="btnContainer">
                   <button class="btn-plus">
                     <img src="./assets/icon/plus.svg" alt="Plus" />
@@ -301,120 +311,165 @@
             <article class="professional">
               <img src="./assets/image/professional1.jpg" alt="Player" />
               <div class="titleProfessionalContainer">
-                <p>Lucas Ocampos</p>
-                <p>(Sevilla FC)</p>
+                <p>
+                  Lucas Ocampos
+                  <br class="desktopHidden" />
+                  (Sevilla FC)
+                </p>
                 <p>Extremo Izquierdo</p>
               </div>
             </article>
             <article class="professional">
               <img src="./assets/image/professional2.jpg" alt="Player" />
               <div class="titleProfessionalContainer">
-                <p>Leandro Paredes</p>
-                <p>(PSG)</p>
+                <p>
+                  Leandro Paredes
+                  <br class="desktopHidden" />
+                  (PSG)
+                </p>
                 <p>Med. Central</p>
               </div>
             </article>
             <article class="professional">
               <img src="./assets/image/professional3.jpg" alt="Player" />
               <div class="titleProfessionalContainer">
-                <p>Guido Rodriguez</p>
-                <p>(Real Betis)</p>
+                <p>
+                  Guido Rodriguez
+                  <br class="desktopHidden" />
+                  (Real Betis)
+                </p>
                 <p>Med. Defensivo</p>
               </div>
             </article>
             <article class="professional cuartoP">
               <img src="./assets/image/professional4.jpg" alt="Player" />
               <div class="titleProfessionalContainer">
-                <p>Gonzalo Montiel</p>
-                <p>(Sevilla FC)</p>
+                <p>
+                  Gonzalo Montiel
+                  <br class="desktopHidden" />
+                  (Sevilla FC)
+                </p>
                 <p>Lateral Derecho</p>
               </div>
             </article>
             <article class="professional hidden professional5">
               <img src="./assets/image/professional5.jpg" alt="Player" />
               <div class="titleProfessionalContainer">
-                <p>Erik Lamela</p>
-                <p>(Sevilla FC)</p>
+                <p>
+                  Erik Lamela
+                  <br class="desktopHidden" />
+                  (Sevilla FC)
+                </p>
                 <p>Med. Derecho</p>
               </div>
             </article>
             <article class="professional hidden professional6">
               <img src="./assets/image/professional6.jpg" alt="Player" />
               <div class="titleProfessionalContainer">
-                <p>Nicolas Dominguez</p>
-                <p>(Bologna FC)</p>
+                <p>
+                  Nicolas Dominguez
+                  <br class="desktopHidden" />
+                  (Bologna FC)
+                </p>
                 <p>Med. Central</p>
               </div>
             </article>
             <article class="professional hidden professional7">
               <img src="./assets/image/professional7.jpg" alt="Player" />
               <div class="titleProfessionalContainer">
-                <p>Lucas Orellano</p>
-                <p>(Velez Sarsfield)</p>
+                <p>
+                  Lucas Orellano
+                  <br class="desktopHidden" />
+                  (Velez Sarsfield)
+                </p>
                 <p>Extremo Derecho</p>
               </div>
             </article>
             <article class="professional hidden professional8">
               <img src="./assets/image/professional8.jpg" alt="Player" />
               <div class="titleProfessionalContainer">
-                <p>Agustin Palavecino</p>
-                <p>(River Plate)</p>
+                <p>
+                  Agustin Palavecino
+                  <br class="desktopHidden" />
+                  (River Plate)
+                </p>
+
                 <p>Med. Ofensivo</p>
               </div>
             </article>
             <article class="professional hidden professional9">
               <img src="./assets/image/professional9.jpg" alt="Player" />
               <div class="titleProfessionalContainer">
-                <p>Emiliano Rigoni</p>
-                <p>(Sau Pablo FC)</p>
+                <p>
+                  Emiliano Rigoni
+                  <br class="desktopHidden" />
+                  (Sau Pablo FC)
+                </p>
                 <p>Extremo Derecho</p>
               </div>
             </article>
             <article class="professional hidden professional10">
               <img src="./assets/image/professional10.jpg" alt="Player" />
               <div class="titleProfessionalContainer">
-                <p>Luciano Acosta</p>
-                <p>(Cincinnati FC)</p>
+                <p>
+                  Luciano Acosta
+                  <br class="desktopHidden" />
+                  (Cincinnati FC)
+                </p>
                 <p>Med. Ofensivo</p>
               </div>
             </article>
             <article class="professional hidden professional11">
               <img src="./assets/image/professional11.jpg" alt="Player" />
               <div class="titleProfessionalContainer">
-                <p>Iván Arboleda</p>
-                <p>(Rayo Valledano)</p>
+                <p>
+                  Iván Arboleda
+                  <br class="desktopHidden" />
+                  (Rayo Valledano)
+                </p>
                 <p>Arquero</p>
               </div>
             </article>
             <article class="professional hidden professional12">
               <img src="./assets/image/professional12.jpg" alt="Player" />
               <div class="titleProfessionalContainer">
-                <p>Francisco Flores</p>
-                <p>(San Lorenzo)</p>
+                <p>
+                  Francisco Flores
+                  <br class="desktopHidden" />
+                  (San Lorenzo)
+                </p>
                 <p>Defensor Central</p>
               </div>
             </article>
             <article class="professional hidden professional13">
               <img src="./assets/image/professional13.jpg" alt="Player" />
               <div class="titleProfessionalContainer">
-                <p>Agustin Mulet</p>
-                <p>(Velez Sarsfield)</p>
+                <p>
+                  Agustin Mulet
+                  <br class="desktopHidden" />
+                  (Velez Sarsfield)
+                </p>
                 <p>Med. Defensivo</p>
               </div>
             </article>
             <article class="professional hidden professional14">
               <img src="./assets/image/professional14.jpg" alt="Player" />
               <div class="titleProfessionalContainer">
-                <p>Martin Sarrafiore</p>
-                <p>(Vasco De Gama)</p>
+                <p>
+                  Martin Sarrafiore
+                  <br class="desktopHidden" />
+                  (Vasco De Gama)
+                </p>
                 <p>Med. Ofensivo</p>
               </div>
             </article>
             <article class="professional hidden professional15">
               <img src="./assets/image/professional15.jpg" alt="Player" />
               <div class="titleProfessionalContainer">
-                <p>Nicolaes Blandi</p>
-                <p>(C.A. Union)</p>
+                <p>
+                  Nicolaes Blandi (C.A. Union)
+                  <br class="desktopHidden" />
+                </p>
                 <p>Mediocampista Ofensivo</p>
               </div>
             </article>
@@ -431,64 +486,88 @@
             <article class="youth">
               <img src="./assets/image/youth.jpg" alt="Player" />
               <div class="titleYouthContainer">
-                <p>Jugador</p>
-                <p>(Club)</p>
+                <p>
+                  Jugador
+                  <br class="desktopHidden" />
+                  (Club)
+                </p>
                 <p>Posición</p>
               </div>
             </article>
             <article class="youth">
               <img src="./assets/image/youth.jpg" alt="Player" />
               <div class="titleYouthContainer">
-                <p>Jugador</p>
-                <p>(Club)</p>
+                <p>
+                  Jugador
+                  <br class="desktopHidden" />
+                  (Club)
+                </p>
                 <p>Posición</p>
               </div>
             </article>
             <article class="youth">
               <img src="./assets/image/youth.jpg" alt="Player" />
               <div class="titleYouthContainer">
-                <p>Jugador</p>
-                <p>(Club)</p>
+                <p>
+                  Jugador
+                  <br class="desktopHidden" />
+                  (Club)
+                </p>
                 <p>Posición</p>
               </div>
             </article>
             <article class="youth cuartoY">
               <img src="./assets/image/youth.jpg" alt="Player" />
               <div class="titleYouthContainer">
-                <p>Jugador</p>
-                <p>(Club)</p>
+                <p>
+                  Jugador
+                  <br class="desktopHidden" />
+                  (Club)
+                </p>
                 <p>Posición</p>
               </div>
             </article>
             <article class="youth hidden youth5">
               <img src="./assets/image/youth.jpg" alt="Player" />
               <div class="titleYouthContainer">
-                <p>Jugador</p>
-                <p>(Club)</p>
+                <p>
+                  Jugador
+                  <br class="desktopHidden" />
+                  (Club)
+                </p>
                 <p>Posición</p>
               </div>
             </article>
             <article class="youth hidden youth6">
               <img src="./assets/image/youth.jpg" alt="Player" />
               <div class="titleYouthContainer">
-                <p>Jugador</p>
-                <p>(Club)</p>
+                <p>
+                  Jugador
+                  <br class="desktopHidden" />
+                  (Club)
+                </p>
                 <p>Posición</p>
               </div>
             </article>
             <article class="youth hidden youth7">
               <img src="./assets/image/youth.jpg" alt="Player" />
               <div class="titleYouthContainer">
-                <p>Jugador</p>
-                <p>(Club)</p>
+                <p>
+                  Jugador
+                  <br class="desktopHidden" />
+                  (Club)
+                </p>
                 <p>Posición</p>
               </div>
             </article>
             <article class="youth hidden youth8">
               <img src="./assets/image/youth.jpg" alt="Player" />
               <div class="titleYouthContainer">
-                <p>Jugador</p>
-                <p>(Club)</p>
+                <p>
+                  Jugador
+                  <br class="desktopHidden" />
+                  (Club)
+                </p>
                 <p>Posición</p>
               </div>
             </article>
@@ -500,57 +579,64 @@
           </div>
         </section>
         <section class="contact" id="contact">
-          <div class="containerLeft">
-            <article class="brand">
-              <img src="./assets/image/logo2.svg" alt="Logo" />
-            </article>
-            <article class="rrss">
-              <div class="facebook">
-                <a href="#">
-                  <img src="./assets/icon/facebook.svg" alt="Facebook Icon" />
-                  /InterPlayers.pro</a
-                >
-              </div>
-              <div class="instagram">
-                <a href="#">
-                  <img src="./assets/icon/instagram.svg" alt="Instagram Icon" />
-                  /interplayers.pro</a
-                >
-              </div>
-            </article>
-          </div>
-          <div class="containerRight">
-            <article class="map">
-              <img src="./assets/image/map.svg" alt="Map" />
-            </article>
-            <article class="address">
-              <div class="contactInfo">
-                <p>
-                  <a href="telf: +54911444442020"> +54 9 11 4444 2020</a>
-                </p>
-                <p>
-                  <a href="mailto: contact@interplayers.com">
-                    contact@interplayers.com</a
+          <div class="containerContact">
+            <div class="containerLeft">
+              <article class="brand">
+                <img src="./assets/image/logo2.svg" alt="Logo" />
+              </article>
+              <article class="rrss">
+                <div class="facebook">
+                  <a href="#">
+                    <img src="./assets/icon/facebook.svg" alt="Facebook Icon" />
+                    / InterPlayers.pro</a
                   >
-                </p>
-              </div>
-              <div class="addressInfo">
-                <p>
-                  Lidoro Quinteros 1149, <br />
-                  CABA, Argentina
-                </p>
-              </div>
-            </article>
+                </div>
+                <div class="instagram">
+                  <a href="#">
+                    <img
+                      src="./assets/icon/instagram.svg"
+                      alt="Instagram Icon"
+                    />
+                    / interplayers.pro</a
+                  >
+                </div>
+              </article>
+            </div>
+            <div class="containerRight">
+              <article class="map">
+                <img src="./assets/image/map.svg" alt="Map" />
+              </article>
+              <article class="address">
+                <div class="contactInfo">
+                  <p>
+                    <a href="telf: +54911444442020"> +54 9 11 4444 2020</a>
+                  </p>
+                  <p>
+                    <a href="mailto: contact@interplayers.com">
+                      contact@interplayers.com</a
+                    >
+                  </p>
+                </div>
+                <div class="addressInfo">
+                  <p>
+                    Lidoro Quinteros 1149, <br />
+                    CABA, Argentina
+                  </p>
+                </div>
+              </article>
+            </div>
           </div>
         </section>
       </div>
     </main>
     <footer>
-      <p>2021 InterPlayers. Todos los derechos reservados.</p>
-      <ul>
-        <li>Términos de Uso</li>
-        <li>Política de privacidad</li>
-      </ul>
+      <div class="footerContainer">
+        <p>2021 InterPlayers. Todos los derechos reservados.</p>
+        <ul>
+          <li>Términos de Uso</li>
+          <li>Política de privacidad</li>
+        </ul>
+      </div>
     </footer>
   </body>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

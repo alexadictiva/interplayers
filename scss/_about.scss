@@ -1,8 +1,9 @@
 /*about*/
 .about {
   @include padding;
-  @include tablet {
-    padding: 60px 65px;
+  @include desktop {
+    padding-top: 120px;
+    padding-bottom: 80px;
   }
   margin-top: -50px;
   padding-top: 60px;

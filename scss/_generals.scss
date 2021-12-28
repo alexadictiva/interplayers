@@ -34,3 +34,8 @@ a {
 .hidden {
   display: none;
 }
+.desktopHidden {
+  @include tablet {
+    display: none;
+  }
+}
