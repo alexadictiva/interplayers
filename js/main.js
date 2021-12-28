@@ -37,15 +37,15 @@ function showProfessional() {
 }
 
 function showYouth() {
+  let cuartoY = document.querySelector(".cuartoY");
   let youth5 = document.querySelector(".youth5");
   let youth6 = document.querySelector(".youth6");
   let youth7 = document.querySelector(".youth7");
   let youth8 = document.querySelector(".youth8");
-  let cuartoY = document.querySelector(".cuartoY");
+
+  cuartoY.classList.toggle("hiddenTablet");
   youth5.classList.toggle("hidden");
   youth6.classList.toggle("hidden");
   youth7.classList.toggle("hidden");
   youth8.classList.toggle("hidden");
-
-  cuartoY.classList.toggle("hiddenTablet");
 }

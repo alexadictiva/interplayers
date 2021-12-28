@@ -6,7 +6,7 @@ header {
   align-items: center;
   position: fixed;
   z-index: 20;
-  @include tablet {
+  @include desktop {
     position: absolute;
   }
   .brand {
@@ -29,7 +29,7 @@ header {
       cursor: pointer;
       position: relative;
       z-index: 12;
-      @include tablet {
+      @include desktop {
         display: none;
       }
     }
@@ -62,23 +62,23 @@ header {
               font-family: $font1;
               transition: all 0.5s ease-in-out;
             }
-            @include tablet {
+            @include desktop {
               padding: 0 15px;
               font-size: 2.1rem;
               line-height: 4rem;
             }
           }
-          @include tablet {
+          @include desktop {
             padding-right: 15px;
             height: 60px;
           }
         }
-        @include tablet {
+        @include desktop {
           background: transparent;
           text-align: end;
         }
       }
-      @include tablet {
+      @include desktop {
         position: absolute;
         right: 60px;
       }

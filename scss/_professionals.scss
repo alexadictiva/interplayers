@@ -1,7 +1,7 @@
 .professionals {
   @include padding;
   @include tablet {
-    padding: 60px 65px;
+    padding: 60px 65px 40px;
   }
   h2 {
     color: $white;
@@ -21,14 +21,16 @@
     justify-content: center;
     gap: 15px;
     flex-wrap: wrap;
-    @include tablet {
+    @include desktop {
       padding: 0 20px;
       gap: 30px;
     }
     .professional {
       width: 130px;
-
       @include tablet {
+        width: 200px;
+      }
+      @include desktop {
         width: 280px;
       }
 

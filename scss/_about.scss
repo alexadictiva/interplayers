@@ -1,7 +1,10 @@
 /*about*/
 .about {
-  margin-top: -50px;
   @include padding;
+  @include tablet {
+    padding: 60px 65px;
+  }
+  margin-top: -50px;
   padding-top: 60px;
   padding-bottom: 40px;
   position: relative;
@@ -13,6 +16,7 @@
     $color3 0%,
     $color4 100%
   );
+
   h2 {
     color: $white;
     font-family: $font1;
@@ -26,7 +30,7 @@
     }
   }
   .containerAbout {
-    @include tablet {
+    @include desktop {
       padding-right: 215px;
       padding-left: 20px;
     }

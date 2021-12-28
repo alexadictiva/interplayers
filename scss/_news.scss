@@ -43,14 +43,14 @@
       }
       .titleNewsContainer {
         background: $blur;
-        padding: 10px;
-        height: 90px;
+        padding: 7px;
+
         @include tablet {
           padding: 20px;
         }
         p {
-          font-size: 1.3rem;
           font-family: $font1;
+          font-size: 1.2rem;
           font-weight: normal;
           line-height: 1.44rem;
           color: $white;

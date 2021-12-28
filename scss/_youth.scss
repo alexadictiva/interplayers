@@ -59,8 +59,9 @@
       }
     }
     .cuartoY {
+      display: none;
       @include tablet {
-        display: none;
+        display: block;
       }
     }
     .hiddenTablet {
