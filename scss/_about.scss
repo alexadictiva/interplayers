@@ -13,7 +13,23 @@
     $color3 0%,
     $color4 100%
   );
+  h2 {
+    color: $white;
+    font-family: $font1;
+    font-size: 3.4rem;
+    line-height: 4rem;
+    font-weight: normal;
+    margin-bottom: 40px;
+    display: none;
+    @include tablet {
+      display: block;
+    }
+  }
   .containerAbout {
+    @include tablet {
+      padding-right: 215px;
+      padding-left: 20px;
+    }
     p {
       margin-bottom: 20px;
       font-size: 1.3rem;
@@ -21,6 +37,11 @@
       font-family: $font1;
       font-weight: normal;
       max-width: 797px;
+      @include tablet {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        margin-bottom: 30px;
+      }
     }
   }
   .btnContainer {

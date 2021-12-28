@@ -1,13 +1,22 @@
 .youths {
-  @include padding;
   padding-top: 15px;
   padding-bottom: 40px;
+  @include padding;
+  @include tablet {
+    padding: 60px 65px;
+  }
 
   h2 {
     color: $white;
     font-family: $font1;
     font-size: 1.904rem;
     line-height: 1.822rem;
+    @include tablet {
+      font-size: 3.4rem;
+      line-height: 4rem;
+      font-weight: normal;
+      margin-bottom: 40px;
+    }
   }
   .youthContainer {
     padding: 5px 0 0;
@@ -41,11 +50,21 @@
         width: 230px;
       }
     }
-    .youthHidden {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      flex-wrap: wrap;
+    .hidden {
+      &:nth-child(5),
+      &:nth-child(6),
+      &:nth-child(7),
+      &:nth-child(8) {
+        display: none;
+      }
+    }
+    .cuartoY {
+      @include tablet {
+        display: none;
+      }
+    }
+    .hiddenTablet {
+      display: block;
     }
   }
   .btnContainerYouths {
