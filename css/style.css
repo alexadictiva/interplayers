@@ -905,6 +905,16 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
   }
 }
 
+.contact .containerContact .containerLeft .rrss .facebook a,
+.contact .containerContact .containerLeft .rrss .instagram a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 @media (min-width: 1024px) {
   .contact .containerContact .containerLeft .rrss .facebook a img,
   .contact .containerContact .containerLeft .rrss .instagram a img {
@@ -1030,6 +1040,12 @@ footer .footerContainer {
   }
 }
 
+@media (min-width: 768px) {
+  footer .footerContainer p {
+    font-size: 1.4rem;
+  }
+}
+
 footer .footerContainer p:first-child {
   margin-bottom: 2px;
 }
@@ -1044,6 +1060,16 @@ footer .footerContainer ul {
 @media (min-width: 768px) {
   footer .footerContainer ul {
     gap: 30px;
+  }
+}
+
+footer .footerContainer ul li a {
+  color: #8f8f8f;
+}
+
+@media (min-width: 768px) {
+  footer .footerContainer ul li a {
+    font-size: 1.4rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -23,6 +23,9 @@ footer {
     }
 
     p {
+      @include tablet {
+        font-size: 1.4rem;
+      }
       &:first-child {
         margin-bottom: 2px;
       }
@@ -32,6 +35,14 @@ footer {
       gap: 10px;
       @include tablet {
         gap: 30px;
+      }
+      li {
+        a {
+          color: $color7;
+          @include tablet {
+            font-size: 1.4rem;
+          }
+        }
       }
     }
   }
