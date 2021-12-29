@@ -51,17 +51,15 @@ body {
 }
 
 main {
-  /* padding-top: 60px; */
+  position: relative;
 }
 
 .wrapper {
-  background-image: url("./../assets/image/bigBg.png");
-}
-
-@media (min-width: 768px) {
-  .wrapper {
-    background-size: contain;
-  }
+  background-image: url("./../assets/image/bigBg.svg");
+  background-size: contain;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 ul {
