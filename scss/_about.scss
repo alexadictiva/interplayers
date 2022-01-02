@@ -1,16 +1,13 @@
 /*about*/
+
 .about {
   @include padding;
-  @include desktop {
-    padding-top: 120px;
-    padding-bottom: 80px;
-  }
+  clip-path: polygon(50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 50%, 0 10%);
   margin-top: -50px;
   padding-top: 60px;
   padding-bottom: 40px;
   position: relative;
   z-index: 10;
-  clip-path: polygon(50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 50%, 0 10%);
   color: $white;
   background-image: radial-gradient(
     50% 50% at 50% 50%,
@@ -18,12 +15,16 @@
     $color4 100%
   );
 
+  @include desktop {
+    padding-top: 120px;
+    padding-bottom: 80px;
+  }
   h2 {
     color: $white;
     font-family: $font1;
     font-size: 3.4rem;
     line-height: 4rem;
-    font-weight: normal;
+
     margin-bottom: 40px;
     display: none;
     @include tablet {
@@ -52,6 +53,8 @@
   .btnContainer {
     margin-top: 20px;
     text-align: center;
+    position: relative;
+    z-index: 10;
 
     button {
       background: transparent;

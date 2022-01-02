@@ -1,8 +1,6 @@
 @font-face {
   font-family: "Gilroy";
-  src: url("./../fonts/Gilroy-Bold.woff2") format("woff2"), url("./../fonts/Gilroy-Bold.woff") format("woff"), url("./../fonts/Gilroy-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
+  src: url("./../fonts/Gilroy-Regular.woff2") format("woff2"), url("./../fonts/Gilroy-Regular.woff") format("woff"), url("./../fonts/Gilroy-Regular.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -10,14 +8,6 @@
   font-family: "Gotham";
   src: url("./../fonts/Gotham-Bold.woff2") format("woff2"), url("./../fonts/Gotham-Bold.woff") format("woff"), url("./../fonts/Gotham-Bold.ttf") format("truetype");
   font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Gilroy";
-  src: url("./../fonts/Gilroy-Regular.woff2") format("woff2"), url("./../fonts/Gilroy-Regular.woff") format("woff"), url("./../fonts/Gilroy-Regular.ttf") format("truetype");
-  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
@@ -60,6 +50,7 @@ main {
   position: absolute;
   width: 100%;
   height: 100%;
+  z-index: 9;
 }
 
 ul {
@@ -224,6 +215,8 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
 
 .swiper {
   width: 100%;
+  position: relative;
+  z-index: 0;
 }
 
 .swiper-slide {
@@ -250,13 +243,13 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
 .about {
   padding-left: 22px;
   padding-right: 22px;
+  -webkit-clip-path: polygon(50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 50%, 0 10%);
+          clip-path: polygon(50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 50%, 0 10%);
   margin-top: -50px;
   padding-top: 60px;
   padding-bottom: 40px;
   position: relative;
   z-index: 10;
-  -webkit-clip-path: polygon(50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 50%, 0 10%);
-          clip-path: polygon(50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 50%, 0 10%);
   color: #ffffff;
   background-image: radial-gradient(50% 50% at 50% 50%, #3b196d 0%, #1b0d27 100%);
 }
@@ -287,7 +280,6 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
   font-family: "Gilroy";
   font-size: 3.4rem;
   line-height: 4rem;
-  font-weight: normal;
   margin-bottom: 40px;
   display: none;
 }
@@ -325,6 +317,8 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
 .about .btnContainer {
   margin-top: 20px;
   text-align: center;
+  position: relative;
+  z-index: 10;
 }
 
 .about .btnContainer button {
@@ -335,6 +329,8 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
 }
 
 .news {
+  position: relative;
+  z-index: 10;
   padding-left: 22px;
   padding-right: 22px;
   padding-top: 15px;
@@ -373,7 +369,6 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
   .news h2 {
     font-size: 3.4rem;
     line-height: 4rem;
-    font-weight: normal;
     margin-bottom: 40px;
   }
 }
@@ -474,7 +469,6 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
   padding-top: 100px;
   padding-bottom: 100px;
   position: relative;
-  z-index: 10;
   -webkit-clip-path: polygon(50% 0, 100% 5%, 100% 95%, 50% 100%, 0 95%, 0 50%, 0 5%);
           clip-path: polygon(50% 0, 100% 5%, 100% 95%, 50% 100%, 0 95%, 0 50%, 0 5%);
   color: #ffffff;
@@ -500,7 +494,6 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
   font-family: "Gilroy";
   font-size: 3.4rem;
   line-height: 4rem;
-  font-weight: normal;
   margin-bottom: 40px;
   display: none;
 }
@@ -556,6 +549,8 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
 }
 
 .professionals {
+  position: relative;
+  z-index: 10;
   padding-left: 22px;
   padding-right: 22px;
 }
@@ -592,7 +587,6 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
   .professionals h2 {
     font-size: 3.4rem;
     line-height: 4rem;
-    font-weight: normal;
     margin-bottom: 40px;
   }
 }
@@ -628,10 +622,63 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
   }
 }
 
-.professionals .professionalsContainer .professional img {
+.professionals .professionalsContainer .professional .professionalInfo {
+  position: relative;
+}
+
+.professionals .professionalsContainer .professional .professionalInfo .professionalImg {
   /* margin-bottom: -3px; */
   width: 100%;
   height: auto;
+}
+
+.professionals .professionalsContainer .professional .professionalInfo .iconsProfessional {
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0000009b), to(transparent));
+  background-image: linear-gradient(to bottom, #0000009b, transparent);
+  padding: 5px 0;
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+@media (min-width: 768px) {
+  .professionals .professionalsContainer .professional .professionalInfo .iconsProfessional {
+    height: 25%;
+  }
+}
+
+.professionals .professionalsContainer .professional .professionalInfo .iconsProfessional a {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px;
+}
+
+.professionals .professionalsContainer .professional .professionalInfo .iconsProfessional a img {
+  width: 25px;
+}
+
+.professionals .professionalsContainer .professional .professionalInfo:hover > .iconsProfessional {
+  opacity: 1;
 }
 
 .professionals .professionalsContainer .professional .titleProfessionalContainer {
@@ -695,6 +742,8 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
 }
 
 .youths {
+  position: relative;
+  z-index: 10;
   padding-left: 22px;
   padding-right: 22px;
   padding-top: 15px;
@@ -726,7 +775,6 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
   .youths h2 {
     font-size: 3.4rem;
     line-height: 4rem;
-    font-weight: normal;
     margin-bottom: 40px;
   }
 }
@@ -825,6 +873,8 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
 }
 
 .contact {
+  position: relative;
+  z-index: 10;
   background-color: #312682;
   padding-left: 22px;
   padding-right: 22px;

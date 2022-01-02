@@ -1,4 +1,6 @@
 .professionals {
+  position: relative;
+  z-index: 10;
   @include padding;
   @include desktop {
     padding-top: 60px;
@@ -13,7 +15,7 @@
     @include tablet {
       font-size: 3.4rem;
       line-height: 4rem;
-      font-weight: normal;
+
       margin-bottom: 40px;
     }
   }
@@ -31,14 +33,48 @@
     }
     .professional {
       width: 130px;
+
       @include tablet {
         width: calc(74vw / 3);
       }
+      .professionalInfo {
+        position: relative;
 
-      img {
-        /* margin-bottom: -3px; */
-        width: 100%;
-        height: auto;
+        .professionalImg {
+          /* margin-bottom: -3px; */
+          width: 100%;
+          height: auto;
+        }
+        .iconsProfessional {
+          opacity: 0;
+          display: flex;
+          justify-content: center;
+          background-image: linear-gradient(to bottom, #0000009b, transparent);
+          padding: 5px 0;
+          width: 100%;
+          height: 40px;
+          position: absolute;
+          bottom: 0;
+          transition-property: opacity;
+          transition-duration: 0.5s;
+          @include tablet {
+            height: 25%;
+          }
+
+          a {
+            width: 25%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+            img {
+              width: 25px;
+            }
+          }
+        }
+        &:hover > .iconsProfessional {
+          opacity: 1;
+        }
       }
       .titleProfessionalContainer {
         text-align: center;

@@ -9,6 +9,7 @@ function showMore() {
   let paragraph = document.querySelector(".aboutHidden");
   paragraph.classList.toggle("hidden");
 }
+
 function showProfessional() {
   let professional5 = document.querySelector(".professional5");
   let professional6 = document.querySelector(".professional6");

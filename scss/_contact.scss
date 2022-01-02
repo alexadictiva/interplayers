@@ -1,4 +1,6 @@
 .contact {
+  position: relative;
+  z-index: 10;
   background-color: $color5;
   @include padding;
   padding-top: 22px;
