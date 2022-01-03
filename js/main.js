@@ -1,3 +1,18 @@
+window.addEventListener("scroll", progresar);
+var main = document.querySelector("main");
+
+function progresar() {
+  var progreso = document.documentElement.scrollTop;
+  if (progreso >= 400) {
+    var header = document.querySelector("header");
+
+    header.style.background = "#431b82";
+  } else {
+    var header = document.querySelector("header");
+    header.style.background = "transparent";
+  }
+}
+
 var swiper = new Swiper(".mySwiper", {
   loop: true,
   autoplay: {
