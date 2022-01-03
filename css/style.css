@@ -677,6 +677,12 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
   width: 25px;
 }
 
+@media (min-width: 768px) {
+  .professionals .professionalsContainer .professional .professionalInfo .iconsProfessional a img {
+    width: 80%;
+  }
+}
+
 .professionals .professionalsContainer .professional .professionalInfo:hover > .iconsProfessional {
   opacity: 1;
 }
