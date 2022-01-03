@@ -2,12 +2,12 @@
 
 .about {
   @include padding;
-  /* clip-path: polygon(50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 50%, 0 10%); */
+  clip-path: polygon(50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 50%, 0 10%);
   margin-top: -50px;
   padding-top: 60px;
   padding-bottom: 40px;
   position: relative;
-
+  z-index: 10;
   color: $white;
   background-image: radial-gradient(
     50% 50% at 50% 50%,
