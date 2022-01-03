@@ -1,3 +1,4 @@
+/*scrool*/
 window.addEventListener("scroll", progresar);
 var main = document.querySelector("main");
 
@@ -12,7 +13,7 @@ function progresar() {
     header.style.background = "transparent";
   }
 }
-
+/*swiper*/
 var swiper = new Swiper(".mySwiper", {
   loop: true,
   autoplay: {
@@ -20,6 +21,8 @@ var swiper = new Swiper(".mySwiper", {
     disableOnInteraction: false,
   },
 });
+
+/*buttons*/
 function showMore() {
   let paragraph = document.querySelector(".aboutHidden");
   paragraph.classList.toggle("hidden");
@@ -65,3 +68,29 @@ function showYouth() {
   youth7.classList.toggle("hidden");
   youth8.classList.toggle("hidden");
 }
+
+//wow Effects
+new WOW().init();
+
+$(window).on("load scroll", function () {
+  "use strict";
+  $(".wow").css("animation-play-state", "paused");
+  $(".wow").each(function () {
+    if (!$(this).data("wow-duration")) {
+      $(this).data("wow-duration", "1s");
+    }
+    if (
+      $(this).data("wow-offset") + $(this).offset().top <=
+        $(window).scrollTop() + $(window).height() ||
+      (!$(this).data("wow-offset") &&
+        $(this).offset().top <= $(window).scrollTop() + $(window).height())
+    ) {
+      $(this).css("animation-play-state", "running ");
+      $(this).css({
+        animationDuration: $(this).data("wow-duration"),
+        animationDelay: $(this).data("wow-delay"),
+        animationIterationCount: $(this).data("wow-iteration"),
+      });
+    }
+  });
+});
