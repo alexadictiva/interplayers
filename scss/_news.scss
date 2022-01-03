@@ -63,12 +63,12 @@
         .btnContainer {
           margin-top: 5px;
           text-align: center;
-          button {
+          a {
             background: transparent;
             cursor: pointer;
             border: 0;
             outline: none;
-            @include tablet {
+            img {
               width: 20px;
             }
           }

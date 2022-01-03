@@ -446,17 +446,15 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
   text-align: center;
 }
 
-.news .newsContainer .new .titleNewsContainer .btnContainer button {
+.news .newsContainer .new .titleNewsContainer .btnContainer a {
   background: transparent;
   cursor: pointer;
   border: 0;
   outline: none;
 }
 
-@media (min-width: 768px) {
-  .news .newsContainer .new .titleNewsContainer .btnContainer button {
-    width: 20px;
-  }
+.news .newsContainer .new .titleNewsContainer .btnContainer a img {
+  width: 20px;
 }
 
 @media (min-width: 768px) {
