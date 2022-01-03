@@ -249,7 +249,6 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
   padding-top: 60px;
   padding-bottom: 40px;
   position: relative;
-  z-index: 10;
   color: #ffffff;
   background-image: radial-gradient(50% 50% at 50% 50%, #3b196d 0%, #1b0d27 100%);
 }
@@ -880,7 +879,6 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
 
 .contact {
   position: relative;
-  z-index: 10;
   background-color: #312682;
   padding-left: 22px;
   padding-right: 22px;
@@ -911,6 +909,8 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
+  z-index: 10;
 }
 
 @media (min-width: 1600px) {

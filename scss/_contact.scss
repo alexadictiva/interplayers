@@ -1,6 +1,6 @@
 .contact {
   position: relative;
-  z-index: 10;
+
   background-color: $color5;
   @include padding;
   padding-top: 22px;
@@ -10,6 +10,8 @@
     max-width: 850px;
     display: flex;
     justify-content: space-between;
+    position: relative;
+    z-index: 10;
 
     @include biggest-desktop {
       max-width: calc(100vw - 400px);
