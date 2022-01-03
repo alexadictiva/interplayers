@@ -289,6 +289,11 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
   }
 }
 
+.about .containerAbout {
+  position: relative;
+  z-index: 10;
+}
+
 @media (min-width: 1024px) {
   .about .containerAbout {
     padding-right: 215px;

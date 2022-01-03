@@ -32,6 +32,8 @@
     }
   }
   .containerAbout {
+    position: relative;
+    z-index: 10;
     @include desktop {
       padding-right: 215px;
       padding-left: 20px;
