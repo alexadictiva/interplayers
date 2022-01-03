@@ -243,8 +243,7 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
 .about {
   padding-left: 22px;
   padding-right: 22px;
-  -webkit-clip-path: polygon(50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 50%, 0 10%);
-          clip-path: polygon(50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 50%, 0 10%);
+  /* clip-path: polygon(50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 50%, 0 10%); */
   margin-top: -50px;
   padding-top: 60px;
   padding-bottom: 40px;
