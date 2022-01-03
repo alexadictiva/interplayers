@@ -1,7 +1,15 @@
 @font-face {
-  font-family: "Gilroy";
+  font-family: "GilroyRegular";
   src: url("./../fonts/Gilroy-Regular.woff2") format("woff2"), url("./../fonts/Gilroy-Regular.woff") format("woff"), url("./../fonts/Gilroy-Regular.ttf") format("truetype");
   font-display: swap;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "GilroyBold";
+  src: url("./../fonts/Gilroy-Bold.woff2") format("woff2"), url("./../fonts/Gilroy-Bold.woff") format("woff"), url("./../fonts/Gilroy-Bold.ttf") format("truetype");
+  font-display: swap;
+  font-weight: bold;
 }
 
 @font-face {
@@ -13,7 +21,7 @@
 }
 
 @font-face {
-  font-family: "Circular ProTT";
+  font-family: "Circular-ProTT";
   src: url("./../fonts/CircularProTT-Bold.woff2") format("woff2"), url("./../fonts/CircularProTT-Bold.woff") format("woff"), url("./../fonts/CircularProTT-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
@@ -179,7 +187,7 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem {
 
 header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
   color: #ffffff;
-  font-family: "Gilroy";
+  font-family: "GilroyBold";
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -277,7 +285,7 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
 
 .about h2 {
   color: #ffffff;
-  font-family: "Gilroy";
+  font-family: "GilroyBold";
   font-size: 3.4rem;
   line-height: 4rem;
   margin-bottom: 40px;
@@ -306,7 +314,7 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
   margin-bottom: 20px;
   font-size: 1.3rem;
   line-height: 1.56rem;
-  font-family: "Gilroy";
+  font-family: "GilroyRegular";
   font-weight: normal;
   max-width: 797px;
 }
@@ -365,7 +373,7 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
 
 .news h2 {
   color: #ffffff;
-  font-family: "Gilroy";
+  font-family: "GilroyBold";
   font-size: 1.654rem;
   line-height: 1.822rem;
 }
@@ -436,7 +444,7 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
 }
 
 .news .newsContainer .new .titleNewsContainer p {
-  font-family: "Gilroy";
+  font-family: "GilroyRegular";
   font-size: 1.2rem;
   font-weight: normal;
   line-height: 1.44rem;
@@ -494,7 +502,7 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
 
 .services h2 {
   color: #ffffff;
-  font-family: "Gilroy";
+  font-family: "GilroyBold";
   font-size: 3.4rem;
   line-height: 4rem;
   margin-bottom: 40px;
@@ -531,7 +539,7 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
   margin-bottom: 10px;
   font-size: 1.888rem;
   line-height: 2.203rem;
-  font-family: "Gilroy";
+  font-family: "GilroyRegular";
   font-weight: normal;
 }
 
@@ -581,7 +589,7 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
 
 .professionals h2 {
   color: #ffffff;
-  font-family: "Gilroy";
+  font-family: "GilroyBold";
   font-size: 1.904rem;
   line-height: 1.822rem;
 }
@@ -700,7 +708,7 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
   font-size: 1.2rem;
   line-height: 1.44rem;
   color: #ffffff;
-  font-family: "Gilroy";
+  font-family: "GilroyRegular";
   font-weight: normal;
 }
 
@@ -737,7 +745,7 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
 }
 
 .professionals .btnContainerProfessionals button {
-  font-family: "Gilroy";
+  font-family: "GilroyRegular";
   font-size: 1.222rem;
   line-height: 1.536rem;
   /*  padding: 10px 20px; */
@@ -775,7 +783,7 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
 
 .youths h2 {
   color: #ffffff;
-  font-family: "Gilroy";
+  font-family: "GilroyBold";
   font-size: 1.904rem;
   line-height: 1.822rem;
 }
@@ -841,7 +849,7 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
 .youths .youthContainer .youth .titleYouthContainer p {
   font-size: 1.2rem;
   line-height: 1.44rem;
-  font-family: "Gilroy";
+  font-family: "GilroyRegular";
   font-weight: normal;
   color: #ffffff;
 }
@@ -869,7 +877,7 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
 }
 
 .youths .btnContainerYouths button {
-  font-family: "Gilroy";
+  font-family: "GilroyRegular";
   font-size: 1.222rem;
   line-height: 1.536rem;
   height: 42.71px;
@@ -946,7 +954,7 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
 }
 
 .contact .containerContact .containerLeft {
-  font-family: "Gilroy";
+  font-family: "Circular-ProTT";
   font-size: 1.236rem;
   line-height: 2.293rem;
 }
@@ -983,8 +991,7 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
 }
 
 .contact .containerContact .containerRight {
-  font-family: "Gilroy";
-  font-weight: normal;
+  font-family: "GilroyRegular";
   font-size: 1.071rem;
   line-height: 1.19rem;
   -webkit-box-align: end;

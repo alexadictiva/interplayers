@@ -28,7 +28,7 @@
       }
     }
     .containerLeft {
-      font-family: $font1;
+      font-family: $font3;
       font-size: 1.236rem;
       line-height: 2.293rem;
       @include desktop {
@@ -60,7 +60,6 @@
     }
     .containerRight {
       font-family: $font1;
-      font-weight: normal;
       font-size: 1.071rem;
       line-height: 1.19rem;
       align-items: flex-end;

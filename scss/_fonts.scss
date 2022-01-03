@@ -1,11 +1,19 @@
 @font-face {
-  font-family: "Gilroy";
+  font-family: "GilroyRegular";
   src: url("./../fonts/Gilroy-Regular.woff2") format("woff2"),
     url("./../fonts/Gilroy-Regular.woff") format("woff"),
     url("./../fonts/Gilroy-Regular.ttf") format("truetype");
   font-display: swap;
+  font-weight: normal;
 }
-
+@font-face {
+  font-family: "GilroyBold";
+  src: url("./../fonts/Gilroy-Bold.woff2") format("woff2"),
+    url("./../fonts/Gilroy-Bold.woff") format("woff"),
+    url("./../fonts/Gilroy-Bold.ttf") format("truetype");
+  font-display: swap;
+  font-weight: bold;
+}
 @font-face {
   font-family: "Gotham";
   src: url("./../fonts/Gotham-Bold.woff2") format("woff2"),
@@ -17,7 +25,7 @@
 }
 
 @font-face {
-  font-family: "Circular ProTT";
+  font-family: "Circular-ProTT";
   src: url("./../fonts/CircularProTT-Bold.woff2") format("woff2"),
     url("./../fonts/CircularProTT-Bold.woff") format("woff"),
     url("./../fonts/CircularProTT-Bold.ttf") format("truetype");
