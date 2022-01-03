@@ -3,10 +3,10 @@ var main = document.querySelector("main");
 
 function progresar() {
   var progreso = document.documentElement.scrollTop;
-  if (progreso >= 400) {
+  if (progreso >= 300) {
     var header = document.querySelector("header");
 
-    header.style.background = "#431b82";
+    header.style.background = "#431b829b";
   } else {
     var header = document.querySelector("header");
     header.style.background = "transparent";
