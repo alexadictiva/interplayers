@@ -457,24 +457,24 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
   }
 }
 
-.news .newsContainer .new img {
+.news .newsContainer .new .newlink img {
   margin-bottom: -3px;
   width: 100%;
   height: auto;
 }
 
-.news .newsContainer .new .titleNewsContainer {
+.news .newsContainer .new .newlink .titleNewsContainer {
   background: #ffffff46;
   padding: 7px;
 }
 
 @media (min-width: 768px) {
-  .news .newsContainer .new .titleNewsContainer {
+  .news .newsContainer .new .newlink .titleNewsContainer {
     padding: 20px;
   }
 }
 
-.news .newsContainer .new .titleNewsContainer p {
+.news .newsContainer .new .newlink .titleNewsContainer p {
   font-family: "GilroyRegular";
   font-size: 1.2rem;
   font-weight: normal;
@@ -482,24 +482,24 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
   color: #ffffff;
 }
 
-.news .newsContainer .new .titleNewsContainer .btnContainer {
+.news .newsContainer .new .newlink .titleNewsContainer .btnContainer {
   margin-top: 5px;
   text-align: center;
 }
 
-.news .newsContainer .new .titleNewsContainer .btnContainer a {
+.news .newsContainer .new .newlink .titleNewsContainer .btnContainer button {
   background: transparent;
   cursor: pointer;
   border: 0;
   outline: none;
 }
 
-.news .newsContainer .new .titleNewsContainer .btnContainer a img {
+.news .newsContainer .new .newlink .titleNewsContainer .btnContainer button img {
   width: 20px;
 }
 
 @media (min-width: 768px) {
-  .news .newsContainer .new {
+  .news .newsContainer .new .newlink {
     width: 230px;
   }
 }
