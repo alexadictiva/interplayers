@@ -567,7 +567,7 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
 }
 
 .services .servicesContainer article p {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   font-size: 1.888rem;
   line-height: 2.203rem;
   font-family: "GilroyRegular";
@@ -638,9 +638,9 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   gap: 15px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -655,7 +655,7 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
 }
 
 .professionals .professionalsContainer .professional {
-  width: 130px;
+  width: calc(74vw / 2);
 }
 
 @media (min-width: 768px) {
@@ -834,10 +834,10 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 15px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   text-transform: uppercase;

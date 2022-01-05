@@ -22,8 +22,8 @@
     margin: 10px auto;
     padding: 5px 0 0;
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    justify-content: space-between;
+    gap: 15px;
     flex-wrap: wrap;
     text-transform: uppercase;
     @include desktop {
