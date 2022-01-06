@@ -170,7 +170,7 @@ header .menu {
 }
 
 header .menu label {
-  padding: 0 30px;
+  margin-right: 30px;
   cursor: pointer;
   position: relative;
   z-index: 12;
@@ -1118,16 +1118,17 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
   }
 }
 
-.contact .containerContact .containerRight .address .contactInfo {
-  margin-top: 10px;
-  font-family: "GilroyRegular";
-  font-size: 1.9rem;
-}
-
+.contact .containerContact .containerRight .address .contactInfo,
 .contact .containerContact .containerRight .address .addressInfo {
   margin-top: 10px;
-  font-family: "GilroyRegular";
-  font-size: 1.9rem;
+}
+
+@media (min-width: 1024px) {
+  .contact .containerContact .containerRight .address .contactInfo,
+  .contact .containerContact .containerRight .address .addressInfo {
+    font-family: "GilroyRegular";
+    font-size: 1.9rem;
+  }
 }
 
 footer {

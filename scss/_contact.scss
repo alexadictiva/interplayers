@@ -90,15 +90,13 @@
           display: flex;
           gap: 30px;
         }
-        .contactInfo {
-          margin-top: 10px;
-          font-family: $font1;
-          font-size: 1.9rem;
-        }
+        .contactInfo,
         .addressInfo {
           margin-top: 10px;
-          font-family: $font1;
-          font-size: 1.9rem;
+          @include desktop {
+            font-family: $font1;
+            font-size: 1.9rem;
+          }
         }
       }
     }
