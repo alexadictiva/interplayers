@@ -7,14 +7,13 @@
   padding-bottom: 22px;
   .containerContact {
     margin: auto;
-    max-width: 850px;
+    /* max-width: 850px; */
     display: flex;
     justify-content: space-between;
     position: relative;
     z-index: 10;
-
     @include biggest-desktop {
-      max-width: calc(100vw - 400px);
+      max-width: calc(100vw - 200px);
     }
     .containerLeft,
     .containerRight {
@@ -80,7 +79,8 @@
             width: 200px;
           }
           @include desktop {
-            width: 300px;
+            width: 380px;
+            margin: 20px 0px;
           }
         }
       }
@@ -92,9 +92,13 @@
         }
         .contactInfo {
           margin-top: 10px;
+          font-family: $font1;
+          font-size: 1.9rem;
         }
         .addressInfo {
           margin-top: 10px;
+          font-family: $font1;
+          font-size: 1.9rem;
         }
       }
     }

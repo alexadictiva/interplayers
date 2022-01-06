@@ -16,10 +16,9 @@ footer {
     }
     @include desktop {
       margin: auto;
-      max-width: 950px;
     }
     @include biggest-desktop {
-      max-width: calc(100vw - 300px);
+      max-width: calc(100vw - 200px);
     }
 
     p {

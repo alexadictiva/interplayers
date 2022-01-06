@@ -3,16 +3,22 @@
   @include padding;
   padding-top: 100px;
   padding-bottom: 100px;
+  @include desktop {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
   h2 {
     color: $white;
     font-family: $font4;
-    font-size: 3.4rem;
+    font-size: 2.4rem;
     line-height: 4rem;
-
     margin-bottom: 40px;
     display: none;
     @include tablet {
       display: block;
+      font-size: 3.4rem;
+      line-height: 4rem;
+      margin-bottom: 40px;
     }
   }
 
@@ -40,11 +46,11 @@
         margin-bottom: 30px;
         font-size: 1.888rem;
         line-height: 2.203rem;
-        font-family: $font1;
+        font-family: $font4;
         font-weight: normal;
         @include tablet {
-          font-size: 1.97rem;
-          line-height: 2.4rem;
+          font-size: 2.4rem;
+          line-height: 3rem;
         }
         @include biggest-desktop {
           font-size: 2.2rem;
