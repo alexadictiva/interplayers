@@ -370,6 +370,22 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
   cursor: pointer;
   border: 0;
   outline: none;
+  position: relative;
+}
+
+.about .btnContainer button .rectangle2 {
+  position: absolute;
+  bottom: 8px;
+  left: -5px;
+}
+
+.rotate {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: -webkit-transform 0.5s linear;
+  transition: -webkit-transform 0.5s linear;
+  transition: transform 0.5s linear;
+  transition: transform 0.5s linear, -webkit-transform 0.5s linear;
 }
 
 .news {

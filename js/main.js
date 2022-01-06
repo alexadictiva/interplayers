@@ -25,7 +25,9 @@ var swiper = new Swiper(".mySwiper", {
 /*buttons*/
 function showMore() {
   let paragraph = document.querySelector(".aboutHidden");
+  let rectangle1 = document.querySelector(".rectangle1");
   paragraph.classList.toggle("hidden");
+  rectangle1.classList.toggle("rotate");
 }
 
 function showProfessional() {
