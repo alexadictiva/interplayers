@@ -1,13 +1,13 @@
 @font-face {
-  font-family: "GilroyRegular";
-  src: url("./../fonts/Gilroy-Regular.woff2") format("woff2"),
-    url("./../fonts/Gilroy-Regular.woff") format("woff"),
-    url("./../fonts/Gilroy-Regular.ttf") format("truetype");
+  font-family: "Gilroy-Medium";
+  src: url("./../fonts/Gilroy-Medium.woff2") format("woff2"),
+    url("./../fonts/Gilroy-Medium.woff") format("woff"),
+    url("./../fonts/Gilroy-Medium.ttf") format("truetype");
   font-display: swap;
   font-weight: normal;
 }
 @font-face {
-  font-family: "GilroyBold";
+  font-family: "Gilroy-Bold";
   src: url("./../fonts/Gilroy-Bold.woff2") format("woff2"),
     url("./../fonts/Gilroy-Bold.woff") format("woff"),
     url("./../fonts/Gilroy-Bold.ttf") format("truetype");
@@ -15,7 +15,7 @@
   font-weight: bold;
 }
 @font-face {
-  font-family: "Gotham";
+  font-family: "Gotham-Bold";
   src: url("./../fonts/Gotham-Bold.woff2") format("woff2"),
     url("./../fonts/Gotham-Bold.woff") format("woff"),
     url("./../fonts/Gotham-Bold.ttf") format("truetype");
