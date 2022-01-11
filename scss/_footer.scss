@@ -1,5 +1,7 @@
 footer {
   background-color: $color6;
+  position: relative;
+  z-index: 10;
   .footerContainer {
     @include padding;
     padding-top: 15px;
