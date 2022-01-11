@@ -21,7 +21,7 @@ footer {
       max-width: calc(100vw - 200px);
     }
 
-    p {
+    .rights {
       @include tablet {
         font-size: 1.4rem;
       }
@@ -29,18 +29,17 @@ footer {
         margin-bottom: 2px;
       }
     }
-    ul {
+    .links {
       display: flex;
       gap: 10px;
       @include tablet {
         gap: 30px;
       }
-      li {
-        a {
-          color: $color7;
-          @include tablet {
-            font-size: 1.4rem;
-          }
+
+      a {
+        color: $color7;
+        @include tablet {
+          font-size: 1.4rem;
         }
       }
     }

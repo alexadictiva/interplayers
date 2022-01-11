@@ -1207,16 +1207,16 @@ footer .footerContainer {
 }
 
 @media (min-width: 768px) {
-  footer .footerContainer p {
+  footer .footerContainer .rights {
     font-size: 1.4rem;
   }
 }
 
-footer .footerContainer p:first-child {
+footer .footerContainer .rights:first-child {
   margin-bottom: 2px;
 }
 
-footer .footerContainer ul {
+footer .footerContainer .links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1224,17 +1224,17 @@ footer .footerContainer ul {
 }
 
 @media (min-width: 768px) {
-  footer .footerContainer ul {
+  footer .footerContainer .links {
     gap: 30px;
   }
 }
 
-footer .footerContainer ul li a {
+footer .footerContainer .links a {
   color: #8f8f8f;
 }
 
 @media (min-width: 768px) {
-  footer .footerContainer ul li a {
+  footer .footerContainer .links a {
     font-size: 1.4rem;
   }
 }
