@@ -2,6 +2,9 @@ footer {
   background-color: $color6;
   position: relative;
   z-index: 10;
+  @include desktop {
+    height: 79px;
+  }
   .footerContainer {
     @include padding;
     padding-top: 15px;
@@ -11,13 +14,15 @@ footer {
     font-size: 0.7rem;
     line-height: 0.84rem;
     @include tablet {
-      padding-top: 25px;
+      padding-top: 23px;
       padding-bottom: 18px;
       display: flex;
       justify-content: space-between;
     }
     @include desktop {
       margin: auto;
+      height: 100%;
+      align-items: center;
     }
     @include biggest-desktop {
       max-width: calc(100vw - 200px);
@@ -41,7 +46,8 @@ footer {
       a {
         color: $color7;
         @include tablet {
-          font-size: 1.4rem;
+          font-size: 1.5rem;
+          line-height: 1.8rem;
         }
       }
     }

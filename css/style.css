@@ -284,7 +284,7 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
   padding-right: 22px;
   -webkit-clip-path: polygon(50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 50%, 0 10%);
           clip-path: polygon(50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 50%, 0 10%);
-  margin-top: -60px;
+  margin-top: -70px;
   padding-top: 60px;
   padding-bottom: 40px;
   position: relative;
@@ -347,7 +347,6 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
   line-height: 1.56rem;
   font-family: "Gilroy-Bold";
   font-weight: normal;
-  max-width: 797px;
 }
 
 @media (min-width: 768px) {
@@ -355,6 +354,15 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
     font-size: 1.8rem;
     line-height: 2.5rem;
     margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about .containerAbout p {
+    max-width: 70vw;
+    font-size: 2.016rem;
+    line-height: 3.276rem;
+    padding-right: 30px;
   }
 }
 
@@ -502,13 +510,19 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
 @media (min-width: 768px) {
   .news .newsContainer .new .newlink .titleNewsContainer p {
     font-size: 1.4rem;
-    line-height: 1.66rem;
+    line-height: 1.5rem;
   }
 }
 
 .news .newsContainer .new .newlink .titleNewsContainer .btnContainer {
   margin-top: 5px;
   text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .news .newsContainer .new .newlink .titleNewsContainer .btnContainer {
+    margin-top: 12px;
+  }
 }
 
 .news .newsContainer .new .newlink .titleNewsContainer .btnContainer button {
@@ -608,19 +622,12 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
   font-weight: normal;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .services .servicesContainer article p {
     font-size: 2.4rem;
-    line-height: 3rem;
-  }
-}
-
-@media (min-width: 1600px) {
-  .services .servicesContainer article p {
-    font-size: 2.2rem;
-    line-height: 2.6rem;
+    line-height: 2.8rem;
     padding-left: 5px;
-    width: 280px;
+    width: 315px;
   }
 }
 
@@ -779,7 +786,7 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
 
 @media (min-width: 768px) {
   .professionals .professionalsContainer .professional .titleProfessionalContainer p {
-    font-size: 1.8rem;
+    font-size: 1.836rem;
     line-height: 2.2rem;
   }
 }
@@ -929,8 +936,8 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
 
 @media (min-width: 768px) {
   .youths .youthContainer .youth .titleYouthContainer p {
-    font-size: 1.5rem;
-    line-height: 1.84rem;
+    font-size: 1.499rem;
+    line-height: 1.652rem;
   }
 }
 
@@ -1050,8 +1057,8 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
 
 @media (min-width: 1024px) {
   .contact .containerContact .containerLeft {
-    font-size: 2rem;
-    line-height: 3rem;
+    font-size: 2.401rem;
+    line-height: 4.445rem;
     font-weight: bold;
   }
 }
@@ -1095,8 +1102,8 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
 
 @media (min-width: 1024px) {
   .contact .containerContact .containerRight {
-    font-size: 1.8rem;
-    line-height: 2.2rem;
+    font-size: 1.944rem;
+    line-height: 1.944rem;
     font-weight: normal;
   }
 }
@@ -1158,6 +1165,12 @@ footer {
   z-index: 10;
 }
 
+@media (min-width: 1024px) {
+  footer {
+    height: 79px;
+  }
+}
+
 footer .footerContainer {
   padding-left: 22px;
   padding-right: 22px;
@@ -1185,7 +1198,7 @@ footer .footerContainer {
 
 @media (min-width: 768px) {
   footer .footerContainer {
-    padding-top: 25px;
+    padding-top: 23px;
     padding-bottom: 18px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1199,6 +1212,10 @@ footer .footerContainer {
 @media (min-width: 1024px) {
   footer .footerContainer {
     margin: auto;
+    height: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -1237,7 +1254,8 @@ footer .footerContainer .links a {
 
 @media (min-width: 768px) {
   footer .footerContainer .links a {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
