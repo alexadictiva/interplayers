@@ -54,8 +54,7 @@ main {
 
 .wrapper {
   background-image: url("./../assets/image/bigBg.svg");
-  background-size: contain;
-  position: absolute;
+  background-size: cover;
   width: 100%;
   height: 100%;
   z-index: 9;
@@ -108,6 +107,16 @@ a {
 .fadeInUp {
   -webkit-animation-name: fadeInUp;
           animation-name: fadeInUp;
+}
+
+.hiddenMobile {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .hiddenMobile {
+    display: block;
+  }
 }
 
 header {
@@ -224,6 +233,12 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
 }
 
 @media (min-width: 1024px) {
+  header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink:hover {
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: 1024px) {
   header .menu .navContainer .menuContainer .menuDropdown .menuItem {
     padding: 0 15px;
     font-size: 2.1rem;
@@ -284,7 +299,7 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
   padding-right: 22px;
   -webkit-clip-path: polygon(50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 50%, 0 10%);
           clip-path: polygon(50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 50%, 0 10%);
-  margin-top: -70px;
+  margin-top: -80px;
   padding-top: 60px;
   padding-bottom: 40px;
   position: relative;
@@ -310,7 +325,7 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
 @media (min-width: 1024px) {
   .about {
     padding-top: 120px;
-    padding-bottom: 80px;
+    padding-bottom: 120px;
   }
 }
 
@@ -371,6 +386,12 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
   text-align: center;
   position: relative;
   z-index: 10;
+}
+
+@media (min-width: 1024px) {
+  .about .btnContainer {
+    display: none;
+  }
 }
 
 .about .btnContainer button {
@@ -530,6 +551,15 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
   cursor: pointer;
   border: 0;
   outline: none;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.news .newsContainer .new .newlink .titleNewsContainer .btnContainer button:hover {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .news .newsContainer .new .newlink .titleNewsContainer .btnContainer button img {
@@ -716,15 +746,14 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
 }
 
 .professionals .professionalsContainer .professional .professionalInfo .iconsProfessional {
-  opacity: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#0000009b), to(transparent));
-  background-image: linear-gradient(to bottom, #0000009b, transparent);
+  background: #0000009b;
+  /* linear-gradient(to bottom, #0000009b, transparent); */
   padding: 5px 0;
   width: 100%;
   height: 40px;
@@ -756,18 +785,34 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
   padding: 5px;
 }
 
-.professionals .professionalsContainer .professional .professionalInfo .iconsProfessional a img {
+.professionals .professionalsContainer .professional .professionalInfo .iconsProfessional a .icon1 {
+  width: 20px;
+}
+
+@media (min-width: 768px) {
+  .professionals .professionalsContainer .professional .professionalInfo .iconsProfessional a .icon1 {
+    width: 50%;
+  }
+}
+
+.professionals .professionalsContainer .professional .professionalInfo .iconsProfessional a .icon2 {
+  width: 20px;
+}
+
+@media (min-width: 768px) {
+  .professionals .professionalsContainer .professional .professionalInfo .iconsProfessional a .icon2 {
+    width: 55%;
+  }
+}
+
+.professionals .professionalsContainer .professional .professionalInfo .iconsProfessional a .icon3 {
   width: 25px;
 }
 
 @media (min-width: 768px) {
-  .professionals .professionalsContainer .professional .professionalInfo .iconsProfessional a img {
+  .professionals .professionalsContainer .professional .professionalInfo .iconsProfessional a .icon3 {
     width: 80%;
   }
-}
-
-.professionals .professionalsContainer .professional .professionalInfo:hover > .iconsProfessional {
-  opacity: 1;
 }
 
 .professionals .professionalsContainer .professional .titleProfessionalContainer {
@@ -791,20 +836,6 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
   }
 }
 
-.professionals .professionalsContainer .hidden:nth-child(5), .professionals .professionalsContainer .hidden:nth-child(6), .professionals .professionalsContainer .hidden:nth-child(7), .professionals .professionalsContainer .hidden:nth-child(8), .professionals .professionalsContainer .hidden:nth-child(9), .professionals .professionalsContainer .hidden:nth-child(10), .professionals .professionalsContainer .hidden:nth-child(11), .professionals .professionalsContainer .hidden:nth-child(12), .professionals .professionalsContainer .hidden:nth-child(13), .professionals .professionalsContainer .hidden:nth-child(14), .professionals .professionalsContainer .hidden:nth-child(15) {
-  display: none;
-}
-
-@media (min-width: 768px) {
-  .professionals .professionalsContainer .cuartoP {
-    display: none;
-  }
-}
-
-.professionals .professionalsContainer .hiddenTablet {
-  display: block;
-}
-
 .professionals .btnContainerProfessionals {
   margin-top: 30px;
   text-align: center;
@@ -813,6 +844,12 @@ header .menu .navContainer .menuContainer .menuDropdown .menuItem .menuLink {
 @media (min-width: 768px) {
   .professionals .btnContainerProfessionals {
     margin-top: 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .professionals .btnContainerProfessionals {
+    display: none;
   }
 }
 

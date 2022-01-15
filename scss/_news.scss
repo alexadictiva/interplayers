@@ -77,6 +77,10 @@
               cursor: pointer;
               border: 0;
               outline: none;
+              transition: transform 0.2s linear;
+              &:hover {
+                transform: rotate(45deg);
+              }
               img {
                 width: 20px;
               }

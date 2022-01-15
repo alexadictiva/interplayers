@@ -3,7 +3,7 @@
 .about {
   @include padding;
   clip-path: polygon(50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 50%, 0 10%);
-  margin-top: -70px;
+  margin-top: -80px;
   padding-top: 60px;
   padding-bottom: 40px;
   position: relative;
@@ -17,7 +17,7 @@
 
   @include desktop {
     padding-top: 120px;
-    padding-bottom: 80px;
+    padding-bottom: 120px;
   }
   h2 {
     color: $white;
@@ -61,6 +61,9 @@
     text-align: center;
     position: relative;
     z-index: 10;
+    @include desktop {
+      display: none;
+    }
 
     button {
       background: transparent;

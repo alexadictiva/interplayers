@@ -26,7 +26,7 @@ var swiper = new Swiper(".mySwiper", {
 function showMore() {
   let paragraph = document.querySelector(".aboutHidden");
   let rectangle1 = document.querySelector(".rectangle1");
-  paragraph.classList.toggle("hidden");
+  paragraph.classList.toggle("hiddenMobile");
   rectangle1.classList.toggle("rotate");
 }
 
@@ -42,19 +42,18 @@ function showProfessional() {
   let professional13 = document.querySelector(".professional13");
   let professional14 = document.querySelector(".professional14");
   let professional15 = document.querySelector(".professional15");
-  let cuartoP = document.querySelector(".cuartoP");
-  professional5.classList.toggle("hidden");
-  professional6.classList.toggle("hidden");
-  professional7.classList.toggle("hidden");
-  professional8.classList.toggle("hidden");
-  professional9.classList.toggle("hidden");
-  professional10.classList.toggle("hidden");
-  professional11.classList.toggle("hidden");
-  professional12.classList.toggle("hidden");
-  professional13.classList.toggle("hidden");
-  professional14.classList.toggle("hidden");
-  professional15.classList.toggle("hidden");
-  cuartoP.classList.toggle("hiddenTablet");
+
+  professional5.classList.toggle("hiddenMobile");
+  professional6.classList.toggle("hiddenMobile");
+  professional7.classList.toggle("hiddenMobile");
+  professional8.classList.toggle("hiddenMobile");
+  professional9.classList.toggle("hiddenMobile");
+  professional10.classList.toggle("hiddenMobile");
+  professional11.classList.toggle("hiddenMobile");
+  professional12.classList.toggle("hiddenMobile");
+  professional13.classList.toggle("hiddenMobile");
+  professional14.classList.toggle("hiddenMobile");
+  professional15.classList.toggle("hiddenMobile");
 }
 
 function showYouth() {
@@ -79,7 +78,7 @@ $(window).on("load scroll", function () {
   $(".wow").css("animation-play-state", "paused");
   $(".wow").each(function () {
     if (!$(this).data("wow-duration")) {
-      $(this).data("wow-duration", "1s");
+      $(this).data("wow-duration", "0.3s");
     }
     if (
       $(this).data("wow-offset") + $(this).offset().top <=
