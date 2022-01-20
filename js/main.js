@@ -72,7 +72,7 @@ function showYouth() {
 
 //wow Effects
 new WOW().init();
-/*
+
 $(window).on("load scroll", function () {
   "use strict";
   $(".wow").css("animation-play-state", "paused");
@@ -95,8 +95,9 @@ $(window).on("load scroll", function () {
     }
   });
 });
-*/
+
 // Scoll reveal
+/*
 var srDuration = 600;
 var srDistance = "20px";
 var srDistanceLg = "40px";
@@ -211,3 +212,4 @@ setTimeout(function () {
     easing: srEasing,
   });
 }, 100);
+*/
