@@ -1,6 +1,5 @@
 .contact {
   position: relative;
-
   background-color: $color5;
   @include padding;
   padding-top: 22px;
@@ -12,6 +11,9 @@
     justify-content: space-between;
     position: relative;
     z-index: 10;
+    @include tablet {
+      padding: 0 15px;
+    }
     @include biggest-desktop {
       max-width: calc(100vw - 200px);
     }

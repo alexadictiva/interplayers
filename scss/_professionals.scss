@@ -6,7 +6,6 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
-
   h2 {
     color: $white;
     font-family: $font4;
@@ -15,25 +14,19 @@
     @include tablet {
       font-size: 3.4rem;
       line-height: 4rem;
-
       margin-bottom: 40px;
     }
   }
   .professionalsContainer {
+    padding: 5px 15px;
     margin: 7px auto;
     display: flex;
     justify-content: space-between;
     gap: 15px;
     flex-wrap: wrap;
 
-    @include desktop {
-      max-width: calc(100vw - 200px);
-      padding: 0;
-      gap: 30px;
-    }
     .professional {
       width: calc(74vw / 2);
-
       @include tablet {
         width: calc(74vw / 3);
       }
@@ -108,6 +101,7 @@
   }
   .btnContainerProfessionals {
     margin-top: 30px;
+    margin-bottom: 20px;
     @include tablet {
       margin-top: 50px;
     }

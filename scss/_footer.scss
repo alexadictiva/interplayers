@@ -1,14 +1,15 @@
 footer {
   background-color: $color6;
   position: relative;
+  @include padding;
+  padding-top: 15px;
+  padding-bottom: 15px;
   z-index: 10;
   @include desktop {
     height: 79px;
   }
   .footerContainer {
-    @include padding;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 0 15px;
     color: $color7;
     font-family: $font2;
     font-size: 0.7rem;
@@ -48,6 +49,7 @@ footer {
         @include tablet {
           font-size: 1.5rem;
           line-height: 1.8rem;
+          margin-top: -3px;
         }
       }
     }

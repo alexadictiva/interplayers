@@ -1,10 +1,9 @@
 .news {
   position: relative;
   z-index: 10;
+  margin-bottom: 15px;
   @include padding;
-  padding-top: 15px;
-  padding-bottom: 20px;
-  @include tablet {
+  @include desktop {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -16,26 +15,17 @@
     @include tablet {
       font-size: 3.4rem;
       line-height: 4rem;
-
       margin-bottom: 40px;
     }
   }
   .newsContainer {
-    padding: 5px 0;
-    margin-top: 7px;
+    padding: 5px 15px;
+    margin: 7px auto;
     display: flex;
     justify-content: space-between;
     gap: 15px;
     flex-wrap: wrap;
-    @include tablet {
-      padding-left: 15px;
-      padding-right: 15px;
-      gap: 30px;
-      flex-wrap: nowrap;
-    }
-    @include biggest-desktop {
-      gap: 40px;
-    }
+
     .new {
       width: 130px;
       @include tablet {
