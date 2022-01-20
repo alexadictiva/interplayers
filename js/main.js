@@ -72,7 +72,7 @@ function showYouth() {
 
 //wow Effects
 new WOW().init();
-
+/*
 $(window).on("load scroll", function () {
   "use strict";
   $(".wow").css("animation-play-state", "paused");
@@ -95,3 +95,119 @@ $(window).on("load scroll", function () {
     }
   });
 });
+*/
+// Scoll reveal
+var srDuration = 600;
+var srDistance = "20px";
+var srDistanceLg = "40px";
+var srDelay = 600;
+var srInverval = 150;
+var srEasing = "ease-out";
+
+setTimeout(function () {
+  ScrollReveal().reveal(".reveal-fade", {
+    distance: 0,
+    reset: true,
+    duration: srDuration,
+    delay: 80,
+    interval: 150,
+    viewFactor: 0.1,
+    easing: srEasing,
+  });
+  ScrollReveal().reveal(".reveal-fade-delay", {
+    distance: 0,
+    reset: true,
+    duration: srDuration,
+    delay: srDelay,
+    interval: 150,
+    viewFactor: 0.1,
+    easing: srEasing,
+  });
+  ScrollReveal().reveal(".reveal-top", {
+    distance: srDistance,
+    reset: true,
+    duration: srDuration,
+    delay: 80,
+    interval: 150,
+    viewFactor: 0.1,
+    easing: srEasing,
+  });
+  ScrollReveal().reveal(".reveal-top-nav", {
+    distance: srDistance,
+    reset: false,
+    duration: srDuration,
+    delay: 80,
+    interval: 150,
+    viewFactor: 0.1,
+    easing: srEasing,
+  });
+  ScrollReveal().reveal(".reveal-bottom", {
+    origin: "top",
+    distance: srDistance,
+    reset: true,
+    duration: srDuration,
+    delay: 0,
+    interval: 150,
+    viewFactor: 0.1,
+    easing: srEasing,
+  });
+  ScrollReveal().reveal(".reveal-left", {
+    origin: "left",
+    distance: srDistanceLg,
+    reset: true,
+    duration: srDuration,
+    delay: 80,
+    interval: 80,
+    viewFactor: 0.1,
+    easing: srEasing,
+  });
+  ScrollReveal().reveal(".reveal-right", {
+    origin: "right",
+    distance: srDistanceLg,
+    reset: true,
+    duration: srDuration,
+    delay: 80,
+    interval: 80,
+    viewFactor: 0.1,
+    easing: srEasing,
+  });
+  ScrollReveal().reveal(".reveal-top-delay", {
+    distance: srDistance,
+    reset: true,
+    duration: srDuration,
+    delay: srDelay,
+    interval: srInverval,
+    viewFactor: 0.1,
+    easing: srEasing,
+  });
+  ScrollReveal().reveal(".reveal-bottom-delay", {
+    origin: "top",
+    distance: srDistance,
+    reset: true,
+    duration: srDuration,
+    delay: srDelay,
+    interval: srInverval,
+    viewFactor: 0.1,
+    easing: srEasing,
+  });
+  ScrollReveal().reveal(".reveal-left-delay", {
+    origin: "left",
+    distance: srDistance,
+    reset: true,
+    duration: srDuration,
+    delay: srDelay,
+    interval: srInverval,
+    viewFactor: 0.1,
+    easing: srEasing,
+  });
+  ScrollReveal().reveal(".reveal-right-delay", {
+    origin: "right",
+    distance: srDistance,
+    reset: true,
+    duration: srDuration,
+    delay: srDelay,
+    interval: srInverval,
+    viewFactor: 0.1,
+    easing: srEasing,
+  });
+}, 100);
